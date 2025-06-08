@@ -5,8 +5,8 @@ import BlogPostClient from "./BlogPostClient"
 const getBlogPost = (id: string) => {
   const blogPosts = [
     {
-      id: "1",
-      title: "Getting Started with Next.js 14",
+      id: "2",
+      title: "AI Horizons Convention",
       content: `
         <p>Next.js has revolutionized the way we build React applications, providing a powerful framework that combines server-side rendering, static site generation, and client-side rendering in one package.</p>
         
@@ -28,71 +28,35 @@ const getBlogPost = (id: string) => {
         
         <p>This will set up a new Next.js project with the latest features enabled by default.</p>
       `,
-      date: "May 15, 2024",
-      author: "John Doe",
-      tags: ["Next.js", "React", "Web Development"],
+      date: "April 30, 2025",
+      author: "Evan Chou",
+      tags: ["AI", "Machine Learning", "Career Development"],
       imageUrl: "/placeholder.svg?height=400&width=800",
     },
     {
-      id: "2",
-      title: "The Power of TypeScript in Frontend Development",
+      id: "1",
+      title: "NASA JPL SIRI Internship Experience",
       content: `
-        <p>TypeScript has become an essential tool for modern frontend development, offering type safety and improved developer experience on top of JavaScript.</p>
+        <p>Artificial Intelligence (AI) is transforming industries and reshaping our world. From healthcare to finance, AI is driving innovation and creating new opportunities.</p>
         
-        <p>By adding static types to JavaScript, TypeScript helps catch errors during development rather than at runtime, leading to more robust applications and fewer bugs in production.</p>
+        <p>In this blog post, we will explore the latest trends in AI, including advancements in machine learning, natural language processing, and computer vision.</p>
         
-        <h2>Benefits of TypeScript</h2>
+        <h2>Key Trends in AI</h2>
         
         <ul>
-          <li>Static Type Checking: Catch type-related errors during development</li>
-          <li>Improved IDE Support: Better autocomplete, navigation, and refactoring tools</li>
-          <li>Enhanced Documentation: Types serve as documentation for your code</li>
-          <li>Safer Refactoring: Make large-scale changes with confidence</li>
-          <li>Better Team Collaboration: Clearer interfaces between components and modules</li>
+          <li>Generative AI: Creating new content using AI models</li>
+          <li>Explainable AI: Making AI decisions transparent and understandable</li>
+          <li>AI Ethics: Addressing the ethical implications of AI technologies</li>
+          <li>AI in Healthcare: Improving patient outcomes with predictive analytics</li>
         </ul>
         
-        <p>Getting started with TypeScript in a React project is easy, especially with tools like Create React App or Next.js that offer TypeScript templates out of the box.</p>
-        
-        <pre><code>npx create-next-app@latest my-app --typescript</code></pre>
-        
-        <p>This command will set up a new Next.js project with TypeScript configuration already in place.</p>
+        <p>The future of AI is bright, with endless possibilities for innovation and growth.</p>
       `,
-      date: "April 22, 2024",
-      author: "John Doe",
-      tags: ["TypeScript", "JavaScript", "Frontend"],
+      date: "June 7, 2025",
+      author: "Evan Chou",
+      tags: ["Applied ML", "Communication Systems", "Internship"],
       imageUrl: "/placeholder.svg?height=400&width=800",
-    },
-    {
-      id: "3",
-      title: "Building Accessible Web Applications",
-      content: `
-        <p>Web accessibility is not just a nice-to-have feature—it's a fundamental aspect of web development that ensures everyone, regardless of ability, can use and navigate your website.</p>
-        
-        <p>Creating accessible web applications means designing and developing websites that can be used by people with disabilities, including visual, auditory, physical, speech, cognitive, and neurological disabilities.</p>
-        
-        <h2>Key Accessibility Principles</h2>
-        
-        <ul>
-          <li>Perceivable: Information must be presentable to users in ways they can perceive</li>
-          <li>Operable: User interface components must be operable by all users</li>
-          <li>Understandable: Information and operation must be understandable</li>
-          <li>Robust: Content must be robust enough to be interpreted by a wide variety of user agents</li>
-        </ul>
-        
-        <p>Implementing accessibility in your web applications involves following WCAG (Web Content Accessibility Guidelines) standards and using semantic HTML, proper ARIA attributes, and ensuring keyboard navigation works correctly.</p>
-        
-        <pre><code>&lt;button aria-label="Close dialog" onClick={closeDialog}&gt;
-  &lt;span className="sr-only"&gt;Close&lt;/span&gt;
-  &lt;XIcon /&gt;
-&lt;/button&gt;</code></pre>
-        
-        <p>This example shows how to create an accessible close button with both an aria-label for screen readers and a visually hidden text element.</p>
-      `,
-      date: "March 10, 2024",
-      author: "John Doe",
-      tags: ["Accessibility", "HTML", "CSS"],
-      imageUrl: "/placeholder.svg?height=400&width=800",
-    },
+    }
   ]
 
   return blogPosts.find((post) => post.id === id)

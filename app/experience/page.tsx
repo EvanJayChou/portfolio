@@ -7,7 +7,7 @@ export default function ExperiencePage() {
       title: "GIS Machine Learning Engineer Intern",
       company: "NASA Jet Propulsion Laboratory",
       period: "June 2025 - Present",
-      logoUrl: "/nasa.png?height=60&width=60",
+      logoUrl: "./jpl.webp?height=60&width=60",
       description:
         "Led development of multiple web applications using React, Next.js, and Node.js. Managed a team of 5 developers and implemented CI/CD pipelines that reduced deployment time by 40%.",
     },
@@ -15,7 +15,7 @@ export default function ExperiencePage() {
       title: "AI/ML Engineer Intern",
       company: "NASA Jet Propulsion Laboratory",
       period: "February 2025 - June 2025",
-      logoUrl: "/nasa.png?height=60&width=60",
+      logoUrl: "./jpl.webp?height=60&width=60",
       description:
         "Developed and maintained web applications for clients across various industries. Implemented responsive designs and integrated third-party APIs to enhance functionality.",
     },

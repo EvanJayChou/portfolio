@@ -10,7 +10,7 @@ export default function EducationPage() {
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027 (Expected)",
       gpa: "N/A",
-      logoUrl: "/placeholder.svg?height=120&width=120",
+      logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
     },
     {
@@ -18,8 +18,8 @@ export default function EducationPage() {
       location: "San Marino, CA",
       degree: "Associate of Science in Applied Sciences, Natural Sciences",
       period: "2023 - 2025",
-      gpa: "3.8/4.0",
-      logoUrl: "/placeholder.svg?height=120&width=120",
+      gpa: "3.875/4.0",
+      logoUrl: "./pcc.png?height=120&width=120",
       status: "Completed",
     },
   ]

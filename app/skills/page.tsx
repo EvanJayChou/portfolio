@@ -4,17 +4,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function SkillsPage() {
   const skillCategories = [
     {
-      category: "Frontend",
-      skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Material UI"],
+      category: "Machine Learning & AI",
+      skills:["PyTorch", "Scikit-Learn", "TensorFlow", "Keras", "OpenCV", "Hugging Face Transformers", "NLTK", "LangChain", "LangGraph", "Ollama", "CUDA"],
     },
     {
-      category: "Backend",
-      skills: ["Node.js", "Express", "Python", "Django", "GraphQL", "REST API", "MongoDB", "PostgreSQL"],
+      category: "Embedded Systems",
+      skills:["Raspberry Pi", "Robot Operating System (ROS 2)", "Linux", "Ubuntu"]
     },
     {
-      category: "DevOps & Tools",
-      skills: ["Git", "GitHub Actions", "Docker", "AWS", "Vercel", "Jest", "Cypress", "Figma"],
+      category:"Data Science",
+      skills:["Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"]
     },
+    {
+      category: "Full-Stack",
+      skills: ["React", "Node.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+    }
   ]
 
   return (

@@ -2,34 +2,25 @@ import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { title } from "process"
 
 export default function BlogPage() {
   const blogPosts = [
     {
       id: 1,
-      title: "Getting Started with Next.js 14",
-      excerpt: "Learn how to build modern web applications with Next.js 14 and its new App Router architecture.",
-      date: "May 15, 2024",
-      tags: ["Next.js", "React", "Web Development"],
-      imageUrl: "/placeholder.svg?height=200&width=400",
+      title: "NASA JPL SIRI Internship Experience",
+      excerpt: "Insights from my internship at NASA JPL, focusing on machine learning applications in communications systems.",
+      date: "June 7, 2025",
+      tags: ["Applied ML", "Communication Systems", "Internship"],
+      imageUrl: "./placeholder.svg?height=200&width=400",
     },
     {
       id: 2,
-      title: "The Power of TypeScript in Frontend Development",
-      excerpt:
-        "Discover how TypeScript can improve your development workflow and help catch errors before they reach production.",
-      date: "April 22, 2024",
-      tags: ["TypeScript", "JavaScript", "Frontend"],
-      imageUrl: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      id: 3,
-      title: "Building Accessible Web Applications",
-      excerpt:
-        "Explore best practices for creating web applications that are accessible to all users, regardless of ability.",
-      date: "March 10, 2024",
-      tags: ["Accessibility", "HTML", "CSS"],
-      imageUrl: "/placeholder.svg?height=200&width=400",
+      title: "AI Horizons Convention",
+      excerpt: "A large-scale event at PCC focused on different perspectives of AI and its impact on society.",
+      date: "April 30, 2025",
+      tags: ["AI", "Machine Learning", "Career Development"],
+      imageUrl: "./placeholder.svg?height=200&width=400",
     },
   ]
 
