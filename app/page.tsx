@@ -19,7 +19,7 @@ export default function Home() {
           <div className="absolute left-1/2 top-[35vh] -translate-x-1/2 -translate-y-1/2 md:left-[35%] md:top-1/2">
             <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-[whitesmoke] md:h-64 md:w-64">
               <Image
-                src="/placeholder.svg?height=256&width=256"
+                src="/evan.jpg?height=256&width=256"
                 alt="Professional headshot"
                 fill
                 className="object-cover"
