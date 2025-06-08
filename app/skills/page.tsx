@@ -5,7 +5,7 @@ export default function SkillsPage() {
   const skillCategories = [
     {
       category: "Machine Learning & AI",
-      skills:["PyTorch", "Scikit-Learn", "TensorFlow", "Keras", "OpenCV", "Hugging Face Transformers", "NLTK", "LangChain", "LangGraph", "Ollama", "CUDA"],
+      skills:["PyTorch", "Scikit-Learn", "TensorFlow", "Keras", "OpenCV", "Hugging Face Transformers", "NLTK", "LangChain", "LangGraph", "Smolagents", "Ollama", "CUDA"],
     },
     {
       category: "Embedded Systems",
