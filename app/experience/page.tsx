@@ -19,6 +19,14 @@ export default function ExperiencePage() {
       description:
         "Developed and maintained web applications for clients across various industries. Implemented responsive designs and integrated third-party APIs to enhance functionality.",
     },
+    {
+      title:"President and Co-Founder",
+      company:"Artifical Intelligence Club at PCC",
+      period: "September 2024 - May 2025",
+      logoUrl: "./aiclub.png?height=60&width=60",
+      description:
+        "Co-founded the Artificial Intelligence Club at Pasadena City College, focusing on promoting AI education and collaboration among students. Organized workshops, guest lectures, and hackathons to foster a community of AI enthusiasts.",
+    }
   ]
 
   return (

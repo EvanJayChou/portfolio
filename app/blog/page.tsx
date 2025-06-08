@@ -11,8 +11,8 @@ export default function BlogPage() {
       title: "NASA JPL SIRI Internship Experience",
       excerpt: "Insights from my internship at NASA JPL, focusing on machine learning applications in communications systems.",
       date: "June 7, 2025",
-      tags: ["Applied ML", "Communication Systems", "Internship"],
-      imageUrl: "./placeholder.svg?height=200&width=400",
+      tags: ["Applied AI/ML", "Communication Systems", "Internship"],
+      imageUrl: "./evanjpl.jpg?height=200&width=400",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function BlogPage() {
       excerpt: "A large-scale event at PCC focused on different perspectives of AI and its impact on society.",
       date: "April 30, 2025",
       tags: ["AI", "Machine Learning", "Career Development"],
-      imageUrl: "./placeholder.svg?height=200&width=400",
+      imageUrl: "./grouppic.jpg?height=200&width=400",
     },
   ]
 

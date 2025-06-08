@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0">
           {/* Profile image at the dividing line - Much larger now */}
           <div className="absolute left-1/2 top-[35vh] -translate-x-1/2 -translate-y-1/2 md:left-[35%] md:top-1/2">
-            <div className="relative h-50 w-50 overflow-hidden rounded-full border-8 border-[whitesmoke] md:h-[350px] md:w-[350px] md:border-[12px]">
+            <div className="relative h-60 w-60 overflow-hidden rounded-full border-8 border-[whitesmoke] md:h-[350px] md:w-[350px] md:border-[12px]">
               <Image
                 src="./evan.jpg?height=350&width=350"
                 alt="Professional headshot"
