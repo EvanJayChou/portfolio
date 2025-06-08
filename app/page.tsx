@@ -42,7 +42,7 @@ export default function Home() {
                     <Github className="h-5 w-5" />
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com/evanjchou" target="_blank" rel="noopener noreferrer">
+                <Link href="https://linkedin.com/in/evanjchou" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" aria-label="LinkedIn Profile">
                     <Linkedin className="h-5 w-5" />
                   </Button>

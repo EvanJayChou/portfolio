@@ -28,48 +28,17 @@ export default function EducationPage() {
 
   const courses = [
     {
-      code: "CS 101",
-      name: "Introduction to Computer Science",
-      description: "Fundamentals of programming, algorithms, and computational thinking.",
-      semester: "Fall 2021",
-    },
-    {
-      code: "CS 202",
-      name: "Data Structures and Algorithms",
-      description: "Implementation and analysis of fundamental data structures and algorithms.",
-      semester: "Spring 2022",
-    },
-    {
-      code: "CS 310",
-      name: "Database Systems",
-      description: "Design and implementation of database management systems.",
-      semester: "Fall 2022",
-    },
-    {
-      code: "CS 350",
-      name: "Web Application Development",
-      description: "Modern web development using JavaScript, React, and Node.js.",
-      semester: "Spring 2023",
-    },
-    {
-      code: "CS 405",
-      name: "Machine Learning",
-      description: "Fundamentals of machine learning algorithms and applications.",
-      semester: "Fall 2023",
-    },
-    {
-      code: "CS 420",
-      name: "Cloud Computing",
-      description: "Distributed systems and cloud infrastructure design and management.",
-      semester: "Spring 2024",
+      code: "CS 033",
+      name: "Advanced Java Programming and Algorithm with Data Structures",
+      description: "Encapsulation, abstract data types, interfaces, algorithms, and complexity and data structures in Java.",
+      semester: "PCC Spring 2025",
     },
   ]
 
   const achievements = [
-    "Dean's List (All Semesters)",
-    "Outstanding Student in Computer Science Award (2023)",
-    "1st Place, University Hackathon (2022)",
-    "Teaching Assistant for Introduction to Programming (2022-2023)",
+    "PCC Dean's List",
+    "PCC Administration Honors",
+    "PCC Flea Market Leadership Scholarship",
   ]
 
   return (
