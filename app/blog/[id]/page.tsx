@@ -1,10 +1,5 @@
-"use client"
-
 import { notFound } from "next/navigation"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
+import BlogPostClient from "./BlogPostClient"
 
 // This would typically come from a database or CMS
 const getBlogPost = (id: string) => {
@@ -103,6 +98,14 @@ const getBlogPost = (id: string) => {
   return blogPosts.find((post) => post.id === id)
 }
 
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' }
+  ]
+}
+
 export default function BlogPostPage({ params }: { params: { id: string } }) {
   const post = getBlogPost(params.id)
 
@@ -110,44 +113,5 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
     notFound()
   }
 
-  return (
-    <div className="container mx-auto max-w-3xl px-4 py-24">
-      <Link href="/blog" className="mb-6 inline-flex items-center text-sm font-medium text-primary hover:underline">
-        <ArrowLeft className="mr-2 h-4 w-4" />
-        Back to all posts
-      </Link>
-
-      <div className="relative mb-8 h-64 w-full overflow-hidden rounded-lg sm:h-96">
-        <Image src={post.imageUrl || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority />
-      </div>
-
-      <div className="mb-4 space-y-2">
-        <h1 className="text-3xl font-bold sm:text-4xl">{post.title}</h1>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-          <span>{post.date}</span>
-          <span>By {post.author}</span>
-        </div>
-        <div className="flex flex-wrap gap-1">
-          {post.tags.map((tag, index) => (
-            <Badge key={index} variant="secondary">
-              {tag}
-            </Badge>
-          ))}
-        </div>
-      </div>
-
-      <div
-        className="prose prose-stone max-w-none dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
-    </div>
-  )
-}
-
-export async function generateStaticParams() {
-  return [
-    { id: '1' },
-    { id: '2' },
-    { id: '3' }
-  ];
+  return <BlogPostClient post={post} />
 }
