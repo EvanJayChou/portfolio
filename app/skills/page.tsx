@@ -9,7 +9,7 @@ export default function SkillsPage() {
     },
     {
       category: "Embedded Systems",
-      skills:["Raspberry Pi", "Robot Operating System (ROS 2)", "Linux", "Ubuntu"]
+      skills:["Raspberry Pi",  "Linux", "Ubuntu", "Robot Operating System (ROS 2)"]
     },
     {
       category:"Data Science",

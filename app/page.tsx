@@ -5,9 +5,17 @@ import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { min } from "date-fns"
 
 export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false)
+
+  const iconStyle = {
+    width:"30px",
+    height:"30px",
+    minWdith:"30px",
+    minHeight:"30px",
+  }
 
   return (
     <div className="flex min-h-screen flex-col pt-16">
@@ -35,8 +43,7 @@ export default function Home() {
           </div>
 
           {/* Content - Mobile: centered below image, Desktop: right-aligned */}
-          <div className="absolute inset-x-0 bottom-0 flex h-[65vh] flex-col items-center justify-center px-6 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[65%] md:items-end md:justify-center md:pr-16 md:text-right">
-            <div className="space-y-6 md:space-y-8">
+            <div className="absolute inset-x-0 bottom-0 flex h-[65vh] flex-col items-center justify-center px-6 pt-20 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[65%] md:items-end md:justify-center md:pr-16 md:pt-0 md:text-right">            <div className="space-y-6 md:space-y-8">
               <div className="space-y-3 md:space-y-4">
                 <h1 className="text-5xl font-bold md:text-8xl">Evan Chou</h1>
                 <h2 className="text-2xl text-muted-foreground md:text-4xl">AI/ML Engineer, Data Scientist</h2>
@@ -44,22 +51,22 @@ export default function Home() {
 
               <div className="flex flex-wrap items-center justify-center gap-4 md:flex-nowrap md:justify-end md:space-x-8 md:gap-0">
                 <Link href="https://github.com/EvanJayChou" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" aria-label="GitHub Profile" className="h-14 w-14 md:h-16 md:w-16">
-                    <Github className="h-7 w-7 md:h-8 md:w-8" />
+                  <Button variant="outline" aria-label="GitHub Profile" className="h-14 w-14 hover:bg-black/80 md:h-16 md:w-16 flex items-center justify-center">
+                    <Github style={iconStyle} strokeWidth={1.5} />
                   </Button>
                 </Link>
                 <Link href="https://linkedin.com/in/evanjchou" target="_blank" rel="noopener noreferrer">
                   <Button
                     variant="outline"
-                    size="lg"
                     aria-label="LinkedIn Profile"
-                    className="h-14 w-14 md:h-16 md:w-16"
+                    className="h-14 w-14 hover:bg-black/80 md:h-16 md:w-16 flex items-center justify-center"
+
                   >
-                    <Linkedin className="h-7 w-7 md:h-8 md:w-8" />
+                    <Linkedin style={iconStyle} strokeWidth={1.5} />
                   </Button>
                 </Link>
-                <Button size="lg" className="flex items-center space-x-3 px-6 py-4 text-lg md:px-8 md:py-6 md:text-xl">
-                  <Download className="h-6 w-6 md:h-7 md:w-7" />
+                <Button className="flex items-center space-x-3 px-6 py-4 text-lg md:px-8 md:py-6 md:text-xl">
+                  <Download style={iconStyle} strokeWidth={1.5} />
                   <span>Download Resume</span>
                 </Button>
               </div>

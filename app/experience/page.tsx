@@ -9,7 +9,7 @@ export default function ExperiencePage() {
       period: "June 2025 - Present",
       logoUrl: "./jpl.webp?height=60&width=60",
       description:
-        "-	Developing computer vision and image classification systems for geological feature identification on Venus, using Vision Transformers, Convolutional Neural Networks, and geospatial modeling techniques. Integrating machine learning models and algorithms within geographic information systems for the NASA VERITAS mission.",
+        "Developing computer vision and image classification systems for geological feature identification on Venus, using Vision Transformers, Convolutional Neural Networks, and geospatial modeling techniques. Integrating machine learning models and algorithms within geographic information systems for the NASA VERITAS mission.",
     },
     {
       title: "AI/ML Engineer Intern",
