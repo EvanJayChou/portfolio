@@ -9,7 +9,7 @@ export default function ExperiencePage() {
       period: "June 2025 - Present",
       logoUrl: "./jpl.webp?height=60&width=60",
       description:
-        "Led development of multiple web applications using React, Next.js, and Node.js. Managed a team of 5 developers and implemented CI/CD pipelines that reduced deployment time by 40%.",
+        "-	Developing computer vision and image classification systems for geological feature identification on Venus, using Vision Transformers, Convolutional Neural Networks, and geospatial modeling techniques. Integrating machine learning models and algorithms within geographic information systems for the NASA VERITAS mission.",
     },
     {
       title: "AI/ML Engineer Intern",
@@ -17,7 +17,7 @@ export default function ExperiencePage() {
       period: "February 2025 - June 2025",
       logoUrl: "./jpl.webp?height=60&width=60",
       description:
-        "Developed and maintained web applications for clients across various industries. Implemented responsive designs and integrated third-party APIs to enhance functionality.",
+        "Researched and developed the automation of anomaly detection systems for Deep Space Network ground communication systems using AI agent interactions, workflows, and pipelines",
     },
     {
       title:"President and Co-Founder",

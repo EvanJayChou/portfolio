@@ -1,9 +1,14 @@
+"use client"
+
+import {useState} from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
   return (
     <div className="flex min-h-screen flex-col pt-16">
       <div className="relative flex flex-grow flex-col md:flex-row">
@@ -24,6 +29,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 priority
+                onLoad={() => setImageLoaded(true)}
               />
             </div>
           </div>
@@ -36,7 +42,7 @@ export default function Home() {
                 <h2 className="text-2xl text-muted-foreground md:text-4xl">AI/ML Engineer, Data Scientist</h2>
               </div>
 
-              <div className="flex items-center justify-center space-x-6 md:justify-end md:space-x-8">
+              <div className="flex flex-wrap items-center justify-center gap-4 md:flex-nowrap md:justify-end md:space-x-8 md:gap-0">
                 <Link href="https://github.com/EvanJayChou" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="lg" aria-label="GitHub Profile" className="h-14 w-14 md:h-16 md:w-16">
                     <Github className="h-7 w-7 md:h-8 md:w-8" />
