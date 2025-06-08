@@ -9,7 +9,7 @@ export default function EducationPage() {
       location: "La Jolla, CA",
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027 (Expected)",
-      gpa: "3.8/4.0",
+      gpa: "N/A",
       logoUrl: "/placeholder.svg?height=120&width=120",
       status: "Current",
     },

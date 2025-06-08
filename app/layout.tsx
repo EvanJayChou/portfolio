@@ -7,8 +7,8 @@ import Navigation from "@/components/navigation"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Professional Portfolio",
-  description: "My professional portfolio showcasing my work and skills",
+  title: "Evan Chou's Portfolio",
+  description: "Evan Chou's professional portfolio showcasing his work and skills",
     generator: 'v0.dev'
 }
 

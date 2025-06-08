@@ -37,12 +37,12 @@ export default function Home() {
               </div>
 
               <div className="flex items-center justify-center space-x-4 md:justify-end">
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/EvanJayChou" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" aria-label="GitHub Profile">
                     <Github className="h-5 w-5" />
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://linkedin.com/evanjchou" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon" aria-label="LinkedIn Profile">
                     <Linkedin className="h-5 w-5" />
                   </Button>
