@@ -8,8 +8,8 @@ export default function SkillsPage() {
       skills:["PyTorch", "Scikit-Learn", "TensorFlow", "Keras", "OpenCV", "Hugging Face Transformers", "NLTK", "LangChain", "LangGraph", "Smolagents", "Ollama", "CUDA"],
     },
     {
-      category: "Embedded Systems",
-      skills:["Raspberry Pi",  "Linux", "Ubuntu", "Robot Operating System (ROS 2)"]
+      category: "Robotics & Embedded Systems",
+      skills:["Raspberry Pi",  "Linux", "Ubuntu", "Robot Operating System (ROS 2)", "NVIDIA Omniverse", "NVIDIA Isaac Sim"]
     },
     {
       category:"Data Science",

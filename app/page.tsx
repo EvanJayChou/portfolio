@@ -47,7 +47,7 @@ export default function Home() {
               <div className="space-y-3 md:space-y-4">
                 <h2 className="text-1xl md:text-3xl">Hi! My name is</h2>
                 <h1 className="text-5xl font-bold md:text-8xl">Evan J. Chou</h1>
-                <h2 className="text-2xl text-muted-foreground md:text-4xl">Aspiring AI/ML Engineer, Data Scientist</h2>
+                <h2 className="text-2xl text-muted-foreground md:text-4xl">Aspiring AI/ML Engineer, Data Scientist,<br/>Robotic Systems Engineer</h2>
               </div>
 
               <div className="flex flex-wrap items-center justify-center gap-4 md:flex-nowrap md:justify-end md:space-x-8 md:gap-0">
