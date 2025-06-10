@@ -21,7 +21,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col pt-16">
       <div className="relative flex flex-grow flex-col md:flex-row">
         {/* Left black section (35% width on desktop, 35% height on mobile) */}
-        <div className="h-[35vh] w-full bg-black md:h-auto md:w-[30%]"></div>
+        <div className="h-[27.5vh] w-full bg-black md:h-auto md:w-[30%]"></div>
 
         {/* Right whitesmoke section (65% width on desktop, 65% height on mobile) */}
         <div className="flex w-full flex-grow bg-white md:w-[70%]"></div>
@@ -29,7 +29,7 @@ export default function Home() {
         {/* Content overlay */}
         <div className="absolute inset-0">
           {/* Profile image at the dividing line - Much larger now */}
-          <div className="absolute left-1/2 top-[35vh] -translate-x-1/2 -translate-y-1/2 md:left-[30%] md:top-1/2">
+          <div className="absolute left-1/2 top-[27.5vh] -translate-x-1/2 -translate-y-1/2 md:left-[30%] md:top-1/2">
             <div className="relative h-60 w-60 overflow-hidden rounded-full border-8 border-[whitesmoke] md:h-[350px] md:w-[350px] md:border-[12px]">
               <Image
                 src="./evan.jpg?height=350&width=350"

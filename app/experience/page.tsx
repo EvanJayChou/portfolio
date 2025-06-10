@@ -17,7 +17,7 @@ export default function ExperiencePage() {
       period: "February 2025 - June 2025",
       logoUrl: "./jpl.webp?height=60&width=60",
       description:
-        "Researched and developed the automation of anomaly detection systems for Deep Space Network ground communication systems using AI agent interactions, workflows, and pipelines",
+        "Investigated different deep learning architectures for multivariate time-series anomaly detection within Deep Space Network communications ground systems and multimodal antenna/transmitter telemetry. Prototyped and orchestrated an AI agent system and workflow capable of complex reasoning and cross-validation for true anomalies using a fine-tuned LLM agent."    
     },
     {
       title:"President and Co-Founder",
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
       period: "September 2024 - May 2025",
       logoUrl: "./aiclub.png?height=60&width=60",
       description:
-        "Co-founded the Artificial Intelligence Club at Pasadena City College, focusing on promoting AI education and collaboration among students. Organized workshops, guest lectures, and hackathons to foster a community of AI enthusiasts.",
+        "Co-founded a student-driven AI/ML research club, organized coding workshops and 3+ collaborative projects on applied AI/ML and interdisciplinary research, built and fostered a community of over 200 students from 7+ different disciplines and clubs on campus. Partnered and networked with research professors and industry experts to encourage more knowledge-sharing and professional development opportunities, providing more impact to STEM initiatives on campus and encouraging ethical and effective AI uses/applications. Lead organized the AI Horizons Convention, a large-scale event at PCC which hosted 150+ attendees and guests from Microsoft, Caltech, NASA JPL, etc.",
     }
   ]
 

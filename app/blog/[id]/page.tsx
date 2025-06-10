@@ -28,19 +28,32 @@ const getBlogPost = (id: string) => {
       `,
       date: "April 30, 2025",
       author: "Evan Chou",
-      tags: ["AI", "Machine Learning", "Career Development"],
-      imageUrl: "./grouppic.jpg?height=400&width=800",
+      tags: ["AI/Machine Learning", "Career Development", "AI Ethics"],
+      imageUrl: "/grouppic.jpg?height=400&width=800",
     },
     {
       id: "1",
       title: "NASA JPL SIRI Internship Experience",
       content: `
-        TBD
+        <h2>🛰️ Wrapping up an unforgettable 17-week journey as a Student Independent Research Intern at NASA Jet Propulsion Laboratory this Spring 2025! 📡</h2>
+
+        <p>This internship didn’t just strengthen my technical skills—it reinforced my passion for applying AI/ML in real-world applications and innovative solutions. Interning at JPL was such an exciting, insightful, and genuinely amazing experience, one that inspired me to learn more about NASA's previous and ongoing missions.</p>
+
+        <p>One of the most rewarding aspects of my internship was the people. I had the opportunity to connect with so many talented and driven interns, forming meaningful friendships and learning from each other's work, goals, and unique perspectives. Sharing this journey with such an inspiring SIRI peer group made the experience all the more special. I also had the privilege of networking with JPL engineers and researchers, gaining insight into the NASA JPL missions and innovations that are shaping the future, and how I can further my career development and skills for a future job in space exploration and robotics.</p>
+
+        <p>I would like to extend a heartfelt thank you to my mentor, Dr. Lisa Locke, PhD, who constantly supported my learning and project development—and inspired me to continue pursuing Electrical Engineering as my academic focus and taking Communications Systems courses when I transfer to university. Your guidance and enthusiasm have been pivotal in my entire experience, and it was truly an honor to be a small part of the Deep Space Network mission and the DSN Systems Engineering Group (333F), under your mentorship.</p>
+
+        <p>I want to express my deepest gratitude to the incredible program specialists at the JPL STEM Engagement Office—Jenny Tieu, Jen Pino, MBA, and Devyn Payne—whose dedication and support made this internship experience truly exceptional. Their passion for student development and unwavering commitment to our success made a lasting impact on me, and I’m so thankful to have had their guidance throughout this journey.</p>
+
+        <p>With that being said, I would like to briefly announce that this isn't the end yet: I am returning to JPL this upcoming summer as a GIS Machine Learning Engineer Intern in the VERITAS SOAR Internship Program (JVSRP)! I am so excited to continue my learning journey with NASA and JPL, and contribute to the ongoing VERITAS mission through machine learning research and geographic information systems applications in planetary sciences.</p>
+
+        <h2>Onwards to Dare Mighty Things on Venus! 🚀</h2>
+
       `,
       date: "June 7, 2025",
       author: "Evan Chou",
       tags: ["Applied ML", "Communication Systems", "Internship"],
-      imageUrl: "./evanjpl.jpg?height=400&width=800",
+      imageUrl: "/evanjpl.jpg?height=400&width=800",
     }
   ]
 
