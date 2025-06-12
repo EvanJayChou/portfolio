@@ -42,7 +42,7 @@ export default function EducationPage() {
       period: "2025 - 2027",
       expectedGraduation: "June 2027",
       gpa: "N/A",
-      logoUrl: "/ucsd.png?height=120&width=120",
+      logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
       description:
         "Pursuing a Bachelor's degree with a focus on machine learning and control. Participating in research projects and student organizations related to AI and robotics.",
@@ -88,7 +88,7 @@ export default function EducationPage() {
       period: "2023 - 2025",
       expectedGraduation: "June 2025",
       gpa: "3.8/4.0",
-      logoUrl: "/pcc.png?height=120&width=120",
+      logoUrl: "./pcc.png?height=120&width=120",
       status: "Completed",
       description:
         "Completed an Associate's degree with honors, focusing on mathematics, physics, and computer science. Participated in the honors program and served as a peer tutor.",

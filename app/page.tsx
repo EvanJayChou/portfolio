@@ -49,7 +49,7 @@ export default function Home() {
 
               <div className="relative h-72 w-72 overflow-hidden rounded-full border-8 border-white shadow-2xl md:h-[425px] md:w-[425px] md:border-[12px] backdrop-blur-sm">
                 <Image
-                  src="/evan.jpg?height=500&width=500"
+                  src="./evan.jpg?height=500&width=500"
                   alt="Professional headshot"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
