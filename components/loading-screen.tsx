@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { usePathname } from "next/navigation"
 
 interface LoadingScreenProps {
   children: React.ReactNode
@@ -12,9 +13,27 @@ interface LoadingScreenProps {
 export default function LoadingScreen({ children }: LoadingScreenProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [progress, setProgress] = useState(0)
+  const pathname = usePathname()
 
+  // Track which pages have been visited
   useEffect(() => {
-    // Simulate loading progress
+    // Get or initialize the visited pages from sessionStorage
+    const visitedPagesStr = sessionStorage.getItem("visitedPages") || "[]"
+    const visitedPages = JSON.parse(visitedPagesStr) as string[]
+
+    // If this page has been visited before, skip loading
+    if (visitedPages.includes(pathname)) {
+      setIsLoading(false)
+      return
+    }
+
+    // Mark this page as visited
+    sessionStorage.setItem("visitedPages", JSON.stringify([...visitedPages, pathname]))
+
+    // Start loading process for new pages
+    setIsLoading(true)
+    setProgress(0)
+
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -27,7 +46,6 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
 
     // Minimum loading time and wait for images
     const timer = setTimeout(() => {
-      // Check if images are loaded
       const images = document.querySelectorAll("img")
       let loadedImages = 0
 
@@ -40,7 +58,9 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
         loadedImages++
         if (loadedImages >= images.length) {
           setProgress(100)
-          setTimeout(() => setIsLoading(false), 500)
+          setTimeout(() => {
+            setIsLoading(false)
+          }, 500)
         }
       }
 
@@ -52,13 +72,13 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
           img.addEventListener("error", checkAllImagesLoaded)
         }
       })
-    }, 1000) // Minimum 1 second loading time
+    }, 800)
 
     return () => {
       clearInterval(interval)
       clearTimeout(timer)
     }
-  }, [])
+  }, [pathname]) // Re-run when the pathname changes
 
   return (
     <>
@@ -113,4 +133,3 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
     </>
   )
 }
-
