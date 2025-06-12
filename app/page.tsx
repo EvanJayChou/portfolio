@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Content - Mobile: centered below image, Desktop: right-aligned */}
-          <div className="absolute inset-x-0 bottom-0 flex h-[72.5vh] flex-col items-center justify-center px-6 pt-20 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[65%] md:items-end md:justify-center md:pr-16 md:pt-0 md:text-right">
+          <div className="absolute inset-x-0 bottom-0 flex h-[80vh] flex-col items-center justify-center px-6 pt-20 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[70%] md:items-end md:justify-center md:pr-16 md:pt-0 md:text-right">
             <div className="space-y-6 md:space-y-8 relative">
               {/* Greeting */}
               <div className="space-y-2">
