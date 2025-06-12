@@ -23,7 +23,7 @@ export default function SkillsPage() {
   const featuredSkills = [
     {
       name: "PyTorch",
-      logo: "/placeholder.svg?height=120&width=120",
+      logo: "./logos/torch.png?height=120&width=120",
       proficiency: 80,
       experience: "2+ years",
       projects: 4,
@@ -31,7 +31,7 @@ export default function SkillsPage() {
     },
     {
       name: "Scikit-Learn",
-      logo: "/placeholder.svg?height=120&width=120",
+      logo: "./logos/sklearn.jpg?height=120&width=120",
       proficiency: 85,
       experience: "2+ years",
       projects: 10,
@@ -45,7 +45,7 @@ export default function SkillsPage() {
       name: "PyTorch",
       category: "ai-ml",
       proficiency: 80,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/torch.png?height=60&width=60",
       level: "Advanced",
       trending: true,
     },
@@ -53,7 +53,7 @@ export default function SkillsPage() {
       name: "TensorFlow",
       category: "ai-ml",
       proficiency: 90,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/tensorflow.png?height=60&width=60",
       level: "Advanced",
       trending: true,
     },
@@ -61,7 +61,7 @@ export default function SkillsPage() {
       name: "Keras",
       category: "ai-ml",
       proficiency: 75,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/keras.png?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -69,7 +69,7 @@ export default function SkillsPage() {
       name: "Scikit-learn",
       category: "ai-ml",
       proficiency: 85,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/sklearn.jpg?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -77,7 +77,7 @@ export default function SkillsPage() {
       name: "OpenCV",
       category: "ai-ml",
       proficiency: 82,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/opencv.png?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -85,7 +85,7 @@ export default function SkillsPage() {
       name: "Hugging Face Transformers",
       category: "ai-ml",
       proficiency: 40,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/hface.png?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
@@ -93,7 +93,7 @@ export default function SkillsPage() {
       name: "LangChain/LangGraph",
       category: "ai-ml",
       proficiency: 40,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/langchain.png?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
@@ -101,7 +101,7 @@ export default function SkillsPage() {
       name: "Ollama",
       category: "ai-ml",
       proficiency: 30,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/ollama.jpg?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -109,7 +109,7 @@ export default function SkillsPage() {
       name:"Smolagents",
       category: "ai-ml",
       proficiency: 30,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/hface.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -117,7 +117,7 @@ export default function SkillsPage() {
       name:"AutoGen",
       category: "ai-ml",
       proficiency: 20,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/msft.png?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
@@ -125,7 +125,7 @@ export default function SkillsPage() {
       name: "CUDA",
       category: "ai-ml",
       proficiency: 50,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/nvidia.jpg?height=60&width=60",
       level: "Intermediate",
       trending: false,
     },
@@ -150,7 +150,7 @@ export default function SkillsPage() {
       name: "Linux",
       category: "tools",
       proficiency: 25,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/linux.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -158,7 +158,7 @@ export default function SkillsPage() {
       name:"Ubuntu",
       category: "tools",
       proficiency: 25,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/ubuntu.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -166,7 +166,7 @@ export default function SkillsPage() {
       name: "NVIDIA Omniverse",
       category: "tools",
       proficiency: 15,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/omniverse.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -174,7 +174,7 @@ export default function SkillsPage() {
       name: "NVIDIA Isaac Sim",
       category: "tools",
       proficiency: 15,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/omniverse.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },
@@ -300,12 +300,12 @@ export default function SkillsPage() {
               <div className="flex flex-col lg:flex-row items-center gap-8">
                 <div className="relative h-32 w-32 flex-shrink-0">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-500 rounded-full animate-pulse opacity-20"></div>
-                  <div className="relative h-full w-full bg-white rounded-full p-4 shadow-lg">
+                  <div className="relative h-full w-full bg-white rounded-full p-4 shadow-lg overflow-hidden">
                     <Image
                       src={featuredSkills[currentCarouselIndex].logo || "/placeholder.svg"}
                       alt={featuredSkills[currentCarouselIndex].name}
                       fill
-                      className="object-contain p-2"
+                      className="object-cover rounded-full"
                     />
                   </div>
                 </div>
@@ -403,8 +403,13 @@ export default function SkillsPage() {
             <CardHeader className="text-center pb-2">
               <div className="relative h-16 w-16 mx-auto mb-3">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-full group-hover:scale-110 transition-transform"></div>
-                <div className="relative h-full w-full bg-white rounded-full p-2 shadow-md">
-                  <Image src={skill.logo || "/placeholder.svg"} alt={skill.name} fill className="object-contain p-1" />
+                <div className="relative h-full w-full bg-white rounded-full p-2 shadow-md overflow-hidden">
+                  <Image
+                    src={skill.logo || "/placeholder.svg"}
+                    alt={skill.name}
+                    fill
+                    className="object-cover rounded-full"
+                  />
                 </div>
               </div>
               <CardTitle className="text-lg">{skill.name}</CardTitle>

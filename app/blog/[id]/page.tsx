@@ -29,7 +29,7 @@ const getBlogPost = (id: string) => {
       date: "April 30, 2025",
       author: "Evan Chou",
       tags: ["AI/Machine Learning", "Career Development", "AI Ethics"],
-      imageUrl: "/grouppic.jpg?height=400&width=800",
+      imageUrl: "./grouppic.jpg?height=400&width=800",
     },
     {
       id: "1",
@@ -53,7 +53,7 @@ const getBlogPost = (id: string) => {
       date: "June 7, 2025",
       author: "Evan Chou",
       tags: ["Applied ML", "Communication Systems", "Internship"],
-      imageUrl: "/evanjpl.jpg?height=400&width=800",
+      imageUrl: "./evanjpl.jpg?height=400&width=800",
     }
   ]
 

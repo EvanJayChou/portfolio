@@ -128,7 +128,7 @@ export default function EducationPage() {
           icon: Award,
         },
         {
-          title: "Flea Market Scholarship",
+          title: "Flea Market Leadership Scholarship",
           description: "Earned a scholarship for leadership and community service",
           date: "2025",
           icon: Award,
