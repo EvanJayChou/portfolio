@@ -27,7 +27,7 @@ export default function Home() {
 
       <div className="relative flex flex-grow flex-col md:flex-row z-10">
         {/* Left black section (35% width on desktop, 35% height on mobile) */}
-        <div className="h-[22.5vh] w-full bg-gradient-to-br from-black via-gray-900 to-black md:h-auto md:w-[30%] relative">
+        <div className="h-[25vh] w-full bg-gradient-to-br from-black via-gray-900 to-black md:h-auto md:w-[30%] relative">
           {/* Subtle pattern overlay */}
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
         {/* Content overlay */}
         <div className="absolute inset-0">
           {/* Profile image at the dividing line */}
-          <div className="absolute left-1/2 top-[22.5vh] -translate-x-1/2 -translate-y-1/2 md:left-[30%] md:top-1/2">
+          <div className="absolute left-1/2 top-[25vh] -translate-x-1/2 -translate-y-1/2 md:left-[30%] md:top-1/2">
             <div className="relative">
               {/* Animated ring around image */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-purple-500 to-pink-500 animate-spin-slow opacity-75 blur-sm scale-20"></div>
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Content - Mobile: centered below image, Desktop: right-aligned */}
-          <div className="absolute inset-x-0 bottom-0 flex h-[55vh] flex-col items-center justify-center px-6 pt-20 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[70%] md:items-end md:justify-center md:pr-16 md:pt-0 md:text-right">
+          <div className="absolute inset-x-0 bottom-0 flex h-[60vh] flex-col items-center justify-center px-6 pt-20 text-center md:inset-x-auto md:right-0 md:top-0 md:h-full md:w-[70%] md:items-end md:justify-center md:pr-16 md:pt-0 md:text-right">
             <div className="space-y-6 md:space-y-8 relative">
               {/* Greeting */}
               <div className="space-y-2">
