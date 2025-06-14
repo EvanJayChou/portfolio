@@ -122,6 +122,14 @@ export default function SkillsPage() {
       trending: true,
     },
     {
+      name:"Semantic Kernel",
+      category: "ai-ml",
+      proficiency: 20,
+      logo: "./logos/msft.png?height=60&width=60",
+      level: "Beginner",
+      trending: true,
+    },
+    {
       name: "CUDA",
       category: "ai-ml",
       proficiency: 50,
@@ -182,7 +190,7 @@ export default function SkillsPage() {
       name: "Raspberry Pi",
       category: "tools",
       proficiency: 50,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/rasp.webp?height=60&width=60",
       level: "Intermediate",
       trending: false,
     },
@@ -191,7 +199,7 @@ export default function SkillsPage() {
       name: "Pandas",
       category: "datascience",
       proficiency: 100,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/pandas.svg?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -199,7 +207,7 @@ export default function SkillsPage() {
       name: "NumPy",
       category: "datascience",
       proficiency: 90,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/numpy.png?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -207,7 +215,7 @@ export default function SkillsPage() {
       name:"Matplotlib",
       category: "datascience",
       proficiency: 90,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/matplotlib.png?height=60&width=60",
       level: "Advanced",
       trending: false,
     },
@@ -224,7 +232,7 @@ export default function SkillsPage() {
       name: "React",
       category: "fullstack",
       proficiency: 80,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/react.webp?height=60&width=60",
       level: "Advanced",
       trending: true,
     },
@@ -232,7 +240,7 @@ export default function SkillsPage() {
       name: "Next.js",
       category: "fullstack",
       proficiency: 45,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/next.png?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
@@ -240,7 +248,7 @@ export default function SkillsPage() {
       name: "Tailwind CSS",
       category: "fullstack",
       proficiency: 90,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/css.svg?height=60&width=60",
       level: "Advanced",
       trending: true,
     },
@@ -248,7 +256,7 @@ export default function SkillsPage() {
       name: "Node.js",
       category: "fullstack",
       proficiency: 65,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/node.png?height=60&width=60",
       level: "Intermediate",
       trending: false,
     },
@@ -305,7 +313,7 @@ export default function SkillsPage() {
                       src={featuredSkills[currentCarouselIndex].logo || "/placeholder.svg"}
                       alt={featuredSkills[currentCarouselIndex].name}
                       fill
-                      className="object-cover rounded-full"
+                      className="object-contain rounded-full"
                     />
                   </div>
                 </div>
@@ -408,7 +416,7 @@ export default function SkillsPage() {
                     src={skill.logo || "/placeholder.svg"}
                     alt={skill.name}
                     fill
-                    className="object-cover rounded-full"
+                    className="object-contain rounded-full"
                   />
                 </div>
               </div>

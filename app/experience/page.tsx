@@ -34,6 +34,7 @@ export default function ExperiencePage() {
         "Investigated different deep learning architectures for multivariate time-series anomaly detection within Deep Space Network communications ground systems and multimodal antenna/transmitter telemetry. Prototyped and orchestrated an AI agent system and workflow capable of complex reasoning and cross-validation for true anomalies using a fine-tuned LLM agent.",
       achievements: [
         "Successfully developed a prototype AI agent system that can autonomously detect and validate anomalies in DSN telemetry data, significantly improving the efficiency of anomaly detection processes.",
+        "Delivered a data extraction and preprocessing program that integrates with existing DSN transmitter data systems, enabling further operational track analysis.",
         "Presented findings and prototype to the DSN Systems Engineering Group, receiving positive feedback and interest for further development.",
       ],
       technologies: ["PyTorch", "Scikit-Learn", "LangChain", "LangGraph", "CUDA", "Ollama", "Hugging Face Transformers"],    

@@ -91,7 +91,7 @@ export default function EducationPage() {
       logoUrl: "./pcc.png?height=120&width=120",
       status: "Completed",
       description:
-        "Completed an Associate's degree with honors, focusing on mathematics, physics, and computer science. Participated in the honors program and served as a peer tutor.",
+        "Completed an Associate's degree with honors, focusing on mathematics, physics, and computer science. Active in community involvement and leadership roles in student organizations.",
       concentrations: ["Mathematics", "Physics", "Computer Science", "Engineering"],
       progress: 100,
       courses: [
