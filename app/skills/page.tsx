@@ -223,7 +223,7 @@ export default function SkillsPage() {
       name: "Seaborn",
       category: "datascience",
       proficiency: 80,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/seaborn.svg?height=60&width=60",
       level: "Intermediate",
       trending: false,
     },
