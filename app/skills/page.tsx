@@ -44,7 +44,7 @@ export default function SkillsPage() {
     {
       name: "PyTorch",
       category: "ai-ml",
-      proficiency: 80,
+      proficiency: 90,
       logo: "./logos/torch.png?height=60&width=60",
       level: "Advanced",
       trending: true,
@@ -76,7 +76,7 @@ export default function SkillsPage() {
     {
       name: "OpenCV",
       category: "ai-ml",
-      proficiency: 82,
+      proficiency: 80,
       logo: "./logos/opencv.png?height=60&width=60",
       level: "Advanced",
       trending: false,
@@ -84,7 +84,7 @@ export default function SkillsPage() {
     {
       name: "Hugging Face Transformers",
       category: "ai-ml",
-      proficiency: 40,
+      proficiency: 70,
       logo: "./logos/hface.png?height=60&width=60",
       level: "Beginner",
       trending: true,
@@ -92,7 +92,7 @@ export default function SkillsPage() {
     {
       name: "LangChain/LangGraph",
       category: "ai-ml",
-      proficiency: 40,
+      proficiency: 50,
       logo: "./logos/langchain.png?height=60&width=60",
       level: "Beginner",
       trending: true,
@@ -116,7 +116,7 @@ export default function SkillsPage() {
     {
       name:"AutoGen",
       category: "ai-ml",
-      proficiency: 20,
+      proficiency: 60,
       logo: "./logos/msft.png?height=60&width=60",
       level: "Beginner",
       trending: true,
@@ -132,7 +132,7 @@ export default function SkillsPage() {
     {
       name: "CUDA",
       category: "ai-ml",
-      proficiency: 50,
+      proficiency: 60,
       logo: "./logos/nvidia.jpg?height=60&width=60",
       level: "Intermediate",
       trending: false,
@@ -167,14 +167,6 @@ export default function SkillsPage() {
       category: "tools",
       proficiency: 25,
       logo: "./logos/ubuntu.png?height=60&width=60",
-      level: "Beginner",
-      trending: false,
-    },
-    {
-      name: "NVIDIA Omniverse",
-      category: "tools",
-      proficiency: 15,
-      logo: "./logos/omniverse.png?height=60&width=60",
       level: "Beginner",
       trending: false,
     },

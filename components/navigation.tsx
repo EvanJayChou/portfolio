@@ -17,6 +17,7 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "Education", path: "/education" },
     { name: "Experience", path: "/experience" },
+    { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
     { name: "Blog", path: "/blog" },
   ]

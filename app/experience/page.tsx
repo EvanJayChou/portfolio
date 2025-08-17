@@ -6,20 +6,22 @@ import Image from "next/image"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "GIS Machine Learning Engineer Intern",
+      title: "Machine Learning Engineer Intern - GIS",
       company: "NASA Jet Propulsion Laboratory",
       location: "Pasadena, CA",
-      period: "June 2025 - Present",
+      period: "June 2025 - August 2025",
       duration: "3 months",
       type: "Internship",
       logoUrl: "./jpl.webp?height=60&width=60",
       status: "Current",
       description:
-        "Developing computer vision and image classification systems for geological feature identification on Venus, using Vision Transformers, Convolutional Neural Networks, and geospatial modeling techniques. Integrating machine learning models and algorithms within geographic information systems for the NASA VERITAS mission.",
+        "Investigated the application of computer vision and semantic segmentation techniques in geological feature identification on Venus. Optimized and evaluated ensemble models on Venus SAR images.",
       achievements: [
-        "TBD"
+        "Investigated data augmentation and computer vision techniques to analyze the effectiveness of wrinkle ridge mapping using ML.",
+        "Inferenced on the entire Venus left-look global mosaic, generating a global map of wrinkle ridge faults on Venus.",
+        "Co-authored the project's research publication, and will be presenting this research at the 2025 American Geophysical Union Conference."
       ],
-      technologies: ["ArcGIS", "QGIS", "PyTorch", "Scikit-Learn", "Tensorflow"],
+      technologies: ["QGIS", "PyTorch", "High Performance Computing", "Hugging Face Transformers", "Scikit-Learn"],
     },
     {
       title: "AI/ML Engineer Intern",
@@ -62,7 +64,7 @@ export default function ExperiencePage() {
   return (
     <div className="container mx-auto max-w-6xl px-4 py-24">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">Professional Experience</h1>
+        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-green-500 to-blue-500 bg-clip-text text-transparent">Professional Experience</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           A journey through my career in AI/ML engineering and data science, building innovative solutions and leading
           high-impact projects.
