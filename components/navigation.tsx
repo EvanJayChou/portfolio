@@ -19,7 +19,7 @@ export default function Navigation() {
     { name: "Experience", path: "/experience" },
     { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
-    { name: "Blog", path: "/blog" },
+    /*{ name: "Blog", path: "/blog" },*/
   ]
 
   return (
