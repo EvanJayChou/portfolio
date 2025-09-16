@@ -24,8 +24,8 @@ export default function ProjectsShowcase() {
       category: "ai-ml",
       color: "from-purple-500 to-pink-500",
       icon: Zap,
-      technologies: ["Robot Operating System (ROS 2)", "Linux", "NVIDIA Omniverse", "Isaac Sim", "Sim2Real", "PyTorch"],
-      metrics: { efficiency: "85%", reviews: "500+", languages: "10" },
+      technologies: ["Robot Operating System (ROS 2)", "Linux", "NVIDIA Isaac Sim", "Sim2Real", "PyTorch"],
+      metrics: { completion: "50%", agents: "6+", frameworks: "5+" },
       achievements: [
         "TBD"
       ],
@@ -37,8 +37,8 @@ export default function ProjectsShowcase() {
     },
     {
       id: 2,
-      title: "AI Note-Taking App",
-      subtitle: "Personalized AI Educational Assistant",
+      title: "TensorPilot",
+      subtitle: "Personalized AI Math/Educational Assistant",
       banner: "/placeholder.svg?height=120&width=400",
       description:
         "Building an extensive AI note-taking app with the AI Club at PCC, focusing on tailored experiences for personalized education on-campus.",
@@ -49,8 +49,8 @@ export default function ProjectsShowcase() {
       category: "ai-ml",
       color: "from-red-500 to-orange-500",
       icon: Globe,
-      technologies: ["Model Context Protocol", "LangChain"],
-      metrics: { accuracy: "94%", images: "10K+", models: "5" },
+      technologies: ["Agentic AI", "Model Context Protocol", "Retrieval Augmented Generation"],
+      metrics: { contributors: "5+", apis: "4+", frameworks: "5+" },
       achievements: [
         "Developed an agentic RAG system for personalized education",
         "Orchestrated model context protocol for efficient API data retrieval",
@@ -62,36 +62,6 @@ export default function ProjectsShowcase() {
         "Improving mathematical reasoning capabilities",
       ],
       links: { github: "#", demo: "#", paper: "#" },
-    },
-    {
-      id: 3,
-      title: "ASL Translator App",
-      subtitle: "Intelligent Sign Language Recognition",
-      banner: "/placeholder.svg?height=120&width=400",
-      description:
-        "An advanced application for real-time American Sign Language translation using computer vision and deep learning techniques.",
-      detailedDescription:
-        "Investigating the use of hybrid deep learning architectures for real-time American Sign Language (ASL) translation. The app utilizes computer vision techniques to recognize hand gestures and translate them into text or speech. It features a user-friendly interface, allowing users to practice ASL and receive instant feedback on their signing accuracy. The system is designed to be accessible and inclusive, promoting communication for the hearing impaired.",
-      period: "2025",
-      status: "Current",
-      category: "infrastructure",
-      color: "from-blue-500 to-cyan-500",
-      icon: Brain,
-      technologies: ["PyTorch", "OpenCV"],
-      metrics: { speedup: "75%", datasets: "100+", uptime: "99.9%" },
-      achievements: [
-        "Reduced processing time by 75%",
-        "Automated data validation and quality checks",
-        "Scalable architecture for multi-mission support",
-        "Implemented real-time monitoring dashboard",
-        "Created comprehensive API documentation",
-      ],
-      challenges: [
-        "Managing petabyte-scale datasets",
-        "Ensuring data consistency across missions",
-        "Optimizing for high-throughput processing",
-      ],
-      links: { github: "#", docs: "#" },
     },
 
   ]
