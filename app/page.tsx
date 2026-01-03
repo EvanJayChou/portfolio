@@ -96,7 +96,7 @@ export default function Home() {
                 {/* Enhanced title */}
                 <div className="space-y-2">
                   <h2 className="text-2xl text-muted-foreground md:text-4xl font-medium">
-                    AI/ML Engineer & Data Scientist
+                    Robotics Engineer & ML Data Scientist
                   </h2>
                   <div className="flex flex-wrap items-center justify-center md:justify-end gap-2">
                     <Badge variant="secondary" className="flex items-center gap-1">
@@ -136,10 +136,10 @@ export default function Home() {
                     />
                   </Button>
                 </Link>
-                <Button className="flex items-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 px-6 py-4 text-lg md:px-8 md:py-6 md:text-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
+                <a href="/Evan Chou Resume.pdf" download className="flex items-center space-x-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 px-6 py-4 text-lg md:px-8 md:py-6 md:text-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group rounded-lg">
                   <Download style={iconStyle} strokeWidth={1.5} className="group-hover:bounce" />
                   <span>Download Resume</span>
-                </Button>
+                </a>
               </div>
 
               {/* Quick stats */}

@@ -41,7 +41,7 @@ export default function EducationPage() {
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027",
       expectedGraduation: "June 2027",
-      gpa: "N/A",
+      gpa: "3.5",
       logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
       description:
@@ -66,17 +66,19 @@ export default function EducationPage() {
           term: "Spring 2026",
         },
         {
-          code: "ECE 102",
-          name: "Introduction to Active Circuit Design",
-          description: "Fundamentals of active circuit design, including operational amplifiers, feedback systems, and signal processing techniques.",
-          grade: "PL",
+          code: "ECE 109",
+          name: "Engineering Probability and Statistics",
+          description: "Introduction to probability theory, including combinatrics, random variables, and probability distributions.",
+          grade: "B",
           credits: 4,
-          term: "Winter 2026",
+          term: "Fall 2025",
         },
       ],
       achievements: [
       ],
       activities: [
+        "IEEE RoboCup Team - AI Engineer",
+        "Triton AI - Robotics Perception Engineer",
       ],
     },
     {

@@ -6,11 +6,75 @@ import Image from "next/image"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "Machine Learning Engineer Intern - GIS",
+      title: "ML Research Scientist",
+      company: "Decoded Brain",
+      location: "Pasadena, CA",
+      period: "September 2025 - Present",
+      duration: "5 months",
+      type: "Membership",
+      logoUrl: "./logos/db.png?height=60&width=60",
+      status: "Current",
+      description:
+        "",
+      achievements: [
+
+      ],
+      technologies: ["PyTorch", "Scikit-Learn"]
+    },
+    {
+      title: "RoboCup AI Engineer",
+      company: "IEEE Student Branch at UCSD",
+      location: "La Jolla, CA",
+      period: "October 2025 - Present",
+      duration: "4 months",
+      type: "Membership",
+      logoUrl: "./logos/ieee.png?height=60&width=60",
+      status: "Current",
+      description:
+        "",
+      achievements: [
+
+      ],
+      technologies: ["PyTorch", "Stable Baselines", "Simulations Software"]
+    },
+    {
+      title: "Robotics Perception Engineer",
+      company: "Triton AI",
+      location: "La Jolla, CA",
+      period: "October 2025 - Present",
+      duration: "4 months",
+      type: "Membership",
+      logoUrl: "./logos/tritonai.png?height=60&width=60",
+      status: "Current",
+      description:
+        "",
+      achievements: [
+
+      ],
+      technologies: ["ROS 2", "LiDAR"]
+    },
+    {
+      title: "AI/ML Research Engineer",
+      company: "Qualcomm Institute - UC San Diego Division of Calit2",
+      location: "La Jolla, CA",
+      period: "October 2025 - Present",
+      duration: "4 months",
+      type: "Part-Time",
+      logoUrl: "./logos/qi.jpg?height=60&width=60",
+      status: "Current",
+      description: 
+        "",
+      achievements: [
+
+      ],
+      technologies: ["AWS", "Docker", "OpenAI API","SQL", "Prompt Engineering"]
+    },
+    {
+      title: "Machine Learning Research Intern",
       company: "NASA Jet Propulsion Laboratory",
       location: "Pasadena, CA",
-      period: "June 2025 - August 2025",
-      duration: "3 months",
+      period: "June 2025 - Present",
+      duration: "8 months",
       type: "Internship",
       logoUrl: "./jpl.webp?height=60&width=60",
       status: "Current",
@@ -19,7 +83,7 @@ export default function ExperiencePage() {
       achievements: [
         "Investigated data augmentation and computer vision techniques to analyze the effectiveness of wrinkle ridge mapping using ML.",
         "Inferenced on the entire Venus left-look global mosaic, generating a global map of wrinkle ridge faults on Venus.",
-        "Co-authored the project's research publication, and will be presenting this research at the 2025 American Geophysical Union Conference."
+        "Co-authored the project's research publication, and presented this research at the 2025 American Geophysical Union Conference."
       ],
       technologies: ["QGIS", "PyTorch", "High Performance Computing", "Hugging Face Transformers", "Scikit-Learn"],
     },

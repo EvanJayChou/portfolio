@@ -119,7 +119,7 @@ export default function SkillsPage() {
       proficiency: 60,
       logo: "./logos/msft.png?height=60&width=60",
       level: "Beginner",
-      trending: true,
+      trending: false,
     },
     {
       name:"Semantic Kernel",
@@ -127,7 +127,7 @@ export default function SkillsPage() {
       proficiency: 20,
       logo: "./logos/msft.png?height=60&width=60",
       level: "Beginner",
-      trending: true,
+      trending: false,
     },
     {
       name: "CUDA",
@@ -150,7 +150,7 @@ export default function SkillsPage() {
       name: "ROS 2 (Robot Operating System)",
       category: "tools",
       proficiency: 25,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./logos/ros.jpg?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
@@ -171,12 +171,12 @@ export default function SkillsPage() {
       trending: false,
     },
     {
-      name: "NVIDIA Isaac Sim",
+      name: "Isaac Sim/Lab",
       category: "tools",
       proficiency: 15,
       logo: "./logos/omniverse.png?height=60&width=60",
       level: "Beginner",
-      trending: false,
+      trending: true,
     },
     {
       name: "Raspberry Pi",
@@ -185,6 +185,14 @@ export default function SkillsPage() {
       logo: "./logos/rasp.webp?height=60&width=60",
       level: "Intermediate",
       trending: false,
+    },
+    {
+      name: "Arduino",
+      category: "tools",
+      proficiency: 30,
+      logo: "./logos/arduino.png?height=60&width=60",
+      level: "Beginner",
+      trending: true,
     },
     // Data Science
     {

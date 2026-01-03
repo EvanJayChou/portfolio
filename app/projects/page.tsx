@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Zap, Rocket, Brain, Globe, X, Calendar, Trophy, Code } from "lucide-react"
+import { ExternalLink, Github, Zap, Rocket, Brain, Globe, X, Calendar, Trophy, Code, Car, HeartPulse } from "lucide-react"
 
 export default function ProjectsShowcase() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
@@ -21,7 +21,7 @@ export default function ProjectsShowcase() {
         "Training and deploying Attention Models, Policy Networks, Shared Networks, and Value Networks using MAPPO for reinforcement learning-based robotics. Creating simulative environments for large-scale reinforcement learning and rendering using NVIDIA Isaac Sim with ROS 2 middleware integrations. Exploring Sim2Real and OpenUSD implementations.",
       period: "2025",
       status: "Current",
-      category: "ai-ml",
+      category: "robotics",
       color: "from-purple-500 to-pink-500",
       icon: Zap,
       technologies: ["Robot Operating System (ROS 2)", "Linux", "NVIDIA Isaac Sim", "Sim2Real", "PyTorch"],
@@ -33,10 +33,62 @@ export default function ProjectsShowcase() {
         "Integrating Isaac Sim simulations with deep RL training scripts",
         "Bridging ROS 2 middleware with simulative robots and deep RL models",
       ],
-      links: { github: "https://github.com/EvanJayChou/marl_robotics", demo: "#" },
+      links: { github: "https://github.com/EvanJayChou/marl_robotics"},
     },
     {
       id: 2,
+      title: "Deep Learning for EEG Denoising",
+      subtitle: "Transformers and Neural Signal Processing",
+      banner: "/placeholder.svg?height=120&width=400",
+      description:
+        "Investigating deep learning methods and transformer architectures for EEG denoising and artifact cleansing, with applications in neural signal processing.",
+      detailedDescription:
+        "Researching different EEG denoiser models, such as CLENet, EEG Conformer, and EEGDfus for cleaning noisy EEG data in real-time. Testing and experimenting with different architectures and training processes to improve SNR and clean signal processing.",
+      period: "2025",
+      status: "Current",
+      category: "ai-ml",
+      color: "from-green-500 to-blue-500",
+      icon: Brain,
+      technologies: ["Deep Learning", "Transformers", "Neural Signal Processing"],
+      metrics: {architectures: "3+", studies: "6+", experiments: "10+"},
+      achievements: [
+
+      ],
+      challenges: [
+        "Reading and replicating previous EEG denoising studies",
+        "Understanding various transformer components and use cases",
+        "Communicating with a wider neuroscience community about research methods and terminology"
+      ],
+      links: {github: 'https://github.com/EvanJayChou/eeg_artifact_detection'},
+    },
+    {
+      id: 3,
+      title: "Autonomous Line-Following Car",
+      subtitle: "UCSD ECE 5 Final Project",
+      banner: "/placeholder.svg?height=120&width=400",
+      description:
+        "Built an autonomous robot car that follows a black line track, with different PID settings tuned for each unique type of track.",
+      detailedDescription:
+        "Built and integrated embedded software, electronics hardware, and mechanical components into an autonomous robot car capable of following a black line track using photoresistor arrays. Fine-tuned different PID settings for each unique type of track through iterative trial and error.",
+      period: "2025",
+      status: "Completed",
+      category: "robotics",
+      color: "from-yellow-500 to-green-500",
+      icon: Car,
+      technologies: ["Embedded Programming", "Electronic Circuits", "PID Tuning", "Arduino", "C++"],
+      metrics: { accuracy: "90%", ranking: "6th", teammates: "3"},
+      achievements: [
+
+      ],
+      challenges: [
+        "Debugging line-following functions in embeddded code",
+        "Ensuring circuit components and wiring are soldered correctly",
+        "PID tuning to ensure stable behaviors on various line tracks"
+      ],
+      links: {demo: "https://youtu.be/AOaCGNmPx2k?si=M8eV_QVU5v0xgr-1", website: "https://evanjaychou.github.io/ece5_lab4_jabe/"},
+    },
+    {
+      id: 4,
       title: "TensorPilot",
       subtitle: "Personalized AI Math/Educational Assistant",
       banner: "/placeholder.svg?height=120&width=400",
@@ -45,7 +97,7 @@ export default function ProjectsShowcase() {
       detailedDescription:
         "This cutting-edge project leverages agentic retrieval-augmented generation (RAG) systems to create a personalized AI educational assistant. The app integrates with various data sources, including lecture notes, textbooks, and online resources, to provide tailored learning experiences. It features advanced natural language processing capabilities, allowing users to interact with the AI in a conversational manner, ask questions, and receive contextually relevant answers.",
       period: "2025",
-      status: "Current",
+      status: "Completed",
       category: "ai-ml",
       color: "from-red-500 to-orange-500",
       icon: Globe,
@@ -63,7 +115,30 @@ export default function ProjectsShowcase() {
       ],
       links: { github: "#", demo: "#", paper: "#" },
     },
+    {
+      id: 5,
+      title: "Human Activity Recognition",
+      subtitle: "MLP for Sensor Classification",
+      banner: "/placeholder.svg?height=120&width=400",
+      description:
+        "",
+      detailedDescription:
+        "",
+      period: "2025",
+      status: "Completed",
+      category: "ai-ml",
+      color: "from-blue-500 to-purple-500",
+      icon: HeartPulse,
+      technologies: ["Neural Networks", "Model Train and Testing", "Data Science"],
+      metrics: {accuracy: "95%", tests: "5", datasets: "2"},
+      achievements: [
 
+      ],
+      challenges: [
+
+      ],
+      links: {},
+    }
   ]
 
   return (
@@ -97,7 +172,7 @@ export default function ProjectsShowcase() {
           {/* Floating Stats */}
           <div className="flex justify-center gap-8">
             {[
-              { label: "Projects", value: "2", icon: "🚀" },
+              { label: "Projects", value: "4", icon: "🚀" },
               { label: "Technologies", value: "15+", icon: "⚡" },
               { label: "Years", value: "3+", icon: "📅" },
             ].map((stat, idx) => (
@@ -227,7 +302,7 @@ export default function ProjectsShowcase() {
                       } flex items-center justify-center rounded-3xl cursor-pointer`}
                       onClick={() => setSelectedProject(project)}
                     >
-                      <div className="text-center">
+                      <div className="text-center pointer-events-none">
                         <div className="text-4xl mb-2">🚀</div>
                         <div className="font-bold">Explore Project</div>
                       </div>
@@ -346,11 +421,17 @@ export default function ProjectsShowcase() {
               {/* Project Links */}
               <div className="flex flex-wrap gap-4">
                 {Object.entries(selectedProject.links).map(([type, url]) => (
-                  <Button key={type} className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
+                  <a
+                    key={type}
+                    href={typeof url === "string" ? url : "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gradient-to-r from-orange-500 to-red-500 text-white flex items-center justify-center px-4 py-2 rounded-lg"
+                  >
                     {type === "github" && <Github className="w-4 h-4 mr-2" />}
                     {type !== "github" && <ExternalLink className="w-4 h-4 mr-2" />}
                     {type.charAt(0).toUpperCase() + type.slice(1)}
-                  </Button>
+                  </a>
                 ))}
               </div>
             </div>
