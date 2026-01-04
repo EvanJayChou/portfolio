@@ -19,7 +19,7 @@ export default function ProjectsShowcase() {
         "Developing a multi-agent reinforcement learning system for coordinating bipedal robots in complex environments, enhancing their adaptability.",
       detailedDescription:
         "Training and deploying Attention Models, Policy Networks, Shared Networks, and Value Networks using MAPPO for reinforcement learning-based robotics. Creating simulative environments for large-scale reinforcement learning and rendering using NVIDIA Isaac Sim with ROS 2 middleware integrations. Exploring Sim2Real and OpenUSD implementations.",
-      period: "2025",
+      period: "2025 - Present",
       status: "Current",
       category: "robotics",
       color: "from-purple-500 to-pink-500",
@@ -39,12 +39,12 @@ export default function ProjectsShowcase() {
       id: 2,
       title: "Deep Learning for EEG Denoising",
       subtitle: "Transformers and Neural Signal Processing",
-      banner: "/placeholder.svg?height=120&width=400",
+      banner: "./neuro.jpg?height=120&width=400",
       description:
         "Investigating deep learning methods and transformer architectures for EEG denoising and artifact cleansing, with applications in neural signal processing.",
       detailedDescription:
         "Researching different EEG denoiser models, such as CLENet, EEG Conformer, and EEGDfus for cleaning noisy EEG data in real-time. Testing and experimenting with different architectures and training processes to improve SNR and clean signal processing.",
-      period: "2025",
+      period: "2025 - Present",
       status: "Current",
       category: "ai-ml",
       color: "from-green-500 to-blue-500",
@@ -65,7 +65,7 @@ export default function ProjectsShowcase() {
       id: 3,
       title: "Autonomous Line-Following Car",
       subtitle: "UCSD ECE 5 Final Project",
-      banner: "/placeholder.svg?height=120&width=400",
+      banner: "./car.jpg?height=120&width=400",
       description:
         "Built an autonomous robot car that follows a black line track, with different PID settings tuned for each unique type of track.",
       detailedDescription:
@@ -78,7 +78,8 @@ export default function ProjectsShowcase() {
       technologies: ["Embedded Programming", "Electronic Circuits", "PID Tuning", "Arduino", "C++"],
       metrics: { accuracy: "90%", ranking: "6th", teammates: "3"},
       achievements: [
-
+        "Ranked 5th in the course section for loop track with 25.07 loops completed in 2 minutes",
+        "Ranked 7th for frequency sweep for successfully navigating 6.5 feet into the track"
       ],
       challenges: [
         "Debugging line-following functions in embeddded code",
@@ -93,7 +94,7 @@ export default function ProjectsShowcase() {
       subtitle: "Personalized AI Math/Educational Assistant",
       banner: "/placeholder.svg?height=120&width=400",
       description:
-        "Building an extensive AI note-taking app with the AI Club at PCC, focusing on tailored experiences for personalized education on-campus.",
+        "Developed an extensive AI note-taking app with the AI Club at PCC, focusing on tailored experiences for personalized education on-campus.",
       detailedDescription:
         "This cutting-edge project leverages agentic retrieval-augmented generation (RAG) systems to create a personalized AI educational assistant. The app integrates with various data sources, including lecture notes, textbooks, and online resources, to provide tailored learning experiences. It features advanced natural language processing capabilities, allowing users to interact with the AI in a conversational manner, ask questions, and receive contextually relevant answers.",
       period: "2025",
@@ -119,11 +120,11 @@ export default function ProjectsShowcase() {
       id: 5,
       title: "Human Activity Recognition",
       subtitle: "MLP for Sensor Classification",
-      banner: "/placeholder.svg?height=120&width=400",
+      banner: "./mlp.png?height=120&width=400",
       description:
-        "",
+        "Beginner-level project on MLP and neural networks using the Human Activity Recognition dataset from UCI Machine Learning Repository.",
       detailedDescription:
-        "",
+        "Developed a project introducing concepts in MLPs and neural networks, including PyTorch implementation, train/validation/test methods, and data preprocessing steps.",
       period: "2025",
       status: "Completed",
       category: "ai-ml",
@@ -132,14 +133,30 @@ export default function ProjectsShowcase() {
       technologies: ["Neural Networks", "Model Train and Testing", "Data Science"],
       metrics: {accuracy: "95%", tests: "5", datasets: "2"},
       achievements: [
-
+        "Achieved a 95% accuracy on the evaluation set with the trained MLP model.",
+        "Gained experience in fundamental deep learning concepts and training processes."
       ],
       challenges: [
-
+        "Understanding Torch datasets and dataloaders, and how to utilize them in ML projects.",
+        "Conducting exploratory data analysis to understand the dataset carefully before training."
       ],
-      links: {},
+      links: {github: "https://github.com/EvanJayChou/mlp_sensor_classification", dataset: "https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition"},
     }
   ]
+
+  // Publications and Honors Data
+  const publicationsAndHonors = [
+    {
+      title: "Automating the Deep Space Network Data Systems - A Case Study in Adaptive Anomaly Detection through Agentic AI",
+      description: "My preprint publication from my NASA JPL SIRI Internship, exploring deep learning methods in anomaly detection within DSN ground communication systems.",
+      link: "https://arxiv.org/abs/2508.21111",
+    },
+    {
+      title: "AGU 2025 Presenter P23G-2731: Automated Mapping of Wrinkle Ridge Faults on Venus using Machine Learning",
+      description: "Presented my VERITAS SOAR Internship research at AGU 2025, discussing our ML methods with transformer models, ensembles, and experimental testing.",
+      link: "https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1955686",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50">
@@ -311,6 +328,36 @@ export default function ProjectsShowcase() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Publications and Honors Section */}
+      <section className="px-6 pb-20">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            Publications & Honors
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {publicationsAndHonors.map((item, idx) => (
+              <div
+                key={idx}
+                className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white to-gray-100 p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold mb-2 group-hover:text-blue-500 transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 mb-4">{item.description}</p>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  Learn more
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>

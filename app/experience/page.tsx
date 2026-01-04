@@ -81,7 +81,7 @@ export default function ExperiencePage() {
       description:
         "Investigated the application of computer vision and semantic segmentation techniques in geological feature identification on Venus. Optimized and evaluated ensemble models on Venus SAR images.",
       achievements: [
-        "Investigated data augmentation and computer vision techniques to analyze the effectiveness of wrinkle ridge mapping using ML.",
+        "Discovered 38x more wrinkle ridges on Venus using ML than previously human-mapped studies.",
         "Inferenced on the entire Venus left-look global mosaic, generating a global map of wrinkle ridge faults on Venus.",
         "Co-authored the project's research publication, and presented this research at the 2025 American Geophysical Union Conference."
       ],

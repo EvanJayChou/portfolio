@@ -96,7 +96,7 @@ export default function Home() {
                 {/* Enhanced title */}
                 <div className="space-y-2">
                   <h2 className="text-2xl text-muted-foreground md:text-4xl font-medium">
-                    Robotics Engineer & ML Data Scientist
+                    Roboticist & AI/ML Engineer
                   </h2>
                   <div className="flex flex-wrap items-center justify-center md:justify-end gap-2">
                     <Badge variant="secondary" className="flex items-center gap-1">

@@ -75,6 +75,12 @@ export default function EducationPage() {
         },
       ],
       achievements: [
+        {
+          title: "Provost Honors",
+          description: "Attained a 3.5 GPA in Fall 2025 quarter",
+          date: "Fall 2025",
+          icon: Award
+        }
       ],
       activities: [
         "IEEE RoboCup Team - AI Engineer",
