@@ -92,7 +92,7 @@ export default function ProjectsShowcase() {
       id: 4,
       title: "TensorPilot",
       subtitle: "Personalized AI Math/Educational Assistant",
-      banner: "/placeholder.svg?height=120&width=400",
+      banner: "./tutor.png?height=120&width=400",
       description:
         "Developed an extensive AI note-taking app with the AI Club at PCC, focusing on tailored experiences for personalized education on-campus.",
       detailedDescription:
@@ -114,7 +114,7 @@ export default function ProjectsShowcase() {
         "Linking APIs to the MCP Host and Server",
         "Improving mathematical reasoning capabilities",
       ],
-      links: { github: "#", demo: "#", paper: "#" },
+      links: { github: "https://github.com/EvanJayChou/tensorpilot" },
     },
     {
       id: 5,

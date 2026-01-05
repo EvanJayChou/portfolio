@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { ChevronLeft, ChevronRight, Star, TrendingUp, Award, Code, Database, Brain, Wrench } from "lucide-react"
+import { ChevronLeft, ChevronRight, Star, TrendingUp, Award, Code, Database, Brain, Zap, Wrench } from "lucide-react"
 import Image from "next/image"
 
 export default function SkillsPage() {
@@ -17,7 +17,8 @@ export default function SkillsPage() {
     { id: "ai-ml", name: "AI/ML", icon: Brain, color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
     { id: "datascience", name: "Data Science", icon: Database, color: "bg-gradient-to-r from-green-500 to-emerald-500" },
     { id: "fullstack", name: "Full-Stack", icon: Code, color: "bg-gradient-to-r from-orange-500 to-red-500" },
-    { id: "tools", name: "Robotics & Embedded Systems", icon: Wrench, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
+    { id: "tools", name: "Robotics & Embedded Systems", icon: Zap, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
+    { id: "dev", name: "DevOps", icon: Wrench, color: "bg-gradient-to-r from-cyan-500 to-green-500"}
   ]
 
   const featuredSkills = [
@@ -86,7 +87,7 @@ export default function SkillsPage() {
       category: "ai-ml",
       proficiency: 70,
       logo: "./logos/hface.png?height=60&width=60",
-      level: "Beginner",
+      level: "Intermediate",
       trending: true,
     },
     {
@@ -132,16 +133,16 @@ export default function SkillsPage() {
     {
       name: "CUDA",
       category: "ai-ml",
-      proficiency: 60,
+      proficiency: 30,
       logo: "./logos/nvidia.jpg?height=60&width=60",
-      level: "Intermediate",
-      trending: false,
+      level: "Beginner",
+      trending: true,
     },
     {
       name: "NLTK",
       category: "ai-ml",
       proficiency: 60,
-      logo: "/placeholder.svg?height=60&width=60",
+      logo: "./placeholder.svg?height=60&width=60",
       level: "Intermediate",
       trending: false,
     },
@@ -234,7 +235,7 @@ export default function SkillsPage() {
       proficiency: 80,
       logo: "./logos/react.webp?height=60&width=60",
       level: "Advanced",
-      trending: true,
+      trending: false,
     },
     {
       name: "Next.js",
@@ -242,7 +243,7 @@ export default function SkillsPage() {
       proficiency: 45,
       logo: "./logos/next.png?height=60&width=60",
       level: "Beginner",
-      trending: true,
+      trending: false,
     },
     {
       name: "Tailwind CSS",
@@ -250,7 +251,7 @@ export default function SkillsPage() {
       proficiency: 90,
       logo: "./logos/css.svg?height=60&width=60",
       level: "Advanced",
-      trending: true,
+      trending: false,
     },
     {
       name: "Node.js",
@@ -260,6 +261,39 @@ export default function SkillsPage() {
       level: "Intermediate",
       trending: false,
     },
+    // DevOps
+    {
+      name: "Git/GitHub",
+      category: "dev",
+      proficiency: 90,
+      logo: "./logos/github.png?height=60&width=60",
+      level: "Advanced",
+      trending: false,
+    },
+    {
+      name: "Docker",
+      category: "dev",
+      proficiency: 15,
+      logo: "./logos/docker.png?height=60&width=60",
+      level: "Beginner",
+      trending: false
+    },
+    {
+      name: "AWS",
+      category: "dev",
+      proficiency: 25,
+      logo: "./logos/aws.jpg?height=60&width=60",
+      level: "Beginner",
+      trending: true
+    },
+    {
+      name: "Azure",
+      category: "dev",
+      proficiency: 30,
+      logo: "./logos/azure.jpg?height=60&width=60",
+      level: "Beginner",
+      trending: true
+    }
   ]
 
   const filteredSkills =
