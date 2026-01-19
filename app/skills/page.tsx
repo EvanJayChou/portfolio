@@ -15,9 +15,10 @@ export default function SkillsPage() {
   const skillCategories = [
     { id: "all", name: "All Skills", icon: Star, color: "bg-gradient-to-r from-purple-500 to-pink-500" },
     { id: "ai-ml", name: "AI/ML", icon: Brain, color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
+    { id: "tools", name: "Robotics & Embedded Systems", icon: Zap, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
+    { id: "ee", name: "Electrical", icon: Zap, color: "bg-gradient-to-r from-yellow-500 to-orange-500"},
     { id: "datascience", name: "Data Science", icon: Database, color: "bg-gradient-to-r from-green-500 to-emerald-500" },
     { id: "fullstack", name: "Full-Stack", icon: Code, color: "bg-gradient-to-r from-orange-500 to-red-500" },
-    { id: "tools", name: "Robotics & Embedded Systems", icon: Zap, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
     { id: "dev", name: "DevOps", icon: Wrench, color: "bg-gradient-to-r from-cyan-500 to-green-500"}
   ]
 
@@ -194,6 +195,31 @@ export default function SkillsPage() {
       logo: "./logos/arduino.png?height=60&width=60",
       level: "Beginner",
       trending: true,
+    },
+    // EE
+    {
+      name: "Vivado",
+      category: "ee",
+      proficiency: 10,
+      logo: "./logos/amd.webp?height=60&width=60",
+      level: "Beginner",
+      trending: false
+    },
+    {
+      name: "KiCAD",
+      category: "ee",
+      proficiency: 15,
+      logo: "./logos/kicad.png?height=60&width=60",
+      level: "Beginner",
+      trending: false
+    },
+    {
+      name: "LTSpice",
+      category: "ee",
+      proficiency: 10,
+      logo: "./placeholder.svg?height=60&width=60",
+      level: "Beginner",
+      trending: false
     },
     // Data Science
     {
