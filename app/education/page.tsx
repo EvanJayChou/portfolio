@@ -50,20 +50,20 @@ export default function EducationPage() {
       progress: 0,
       courses: [
         {
+          code: "ECE 148",
+          name: "Intro to Autonomous Vehicles",
+          description: "Introduction to AV systems, including robot autonomy, deep learning-based perception, embedded systems with Linux OS.",
+          grade: "IP",
+          credits: 4,
+          term: "Spring 2026"
+        },
+        {
           code: "ECE 171A-B",
           name: "Linear Control System Theory",
           description: "Introduction to linear control systems, including system modeling, stability analysis, and control design.",
           grade: "PL",
           credits: 8,
           term: "Spring 2026 - Fall 2026",
-        },
-        {
-          code: "ECE 100",
-          name: "Linear Electronic Systems",
-          description: "Study of linear electronic systems, including circuit analysis, signal processing, and system dynamics.",
-          grade: "PL",
-          credits: 4,
-          term: "Spring 2026",
         },
         {
           code: "ECE 109",
@@ -73,6 +73,14 @@ export default function EducationPage() {
           credits: 4,
           term: "Fall 2025",
         },
+        {
+          code: "COGS 108",
+          name: "Data Science in Practice",
+          description: "Introduction to data science methods, including data augmentation, manipulation, and analysis.",
+          grade: "IP",
+          credits: 4,
+          term: "Spring 2026"
+        }
       ],
       achievements: [
         {
@@ -83,6 +91,7 @@ export default function EducationPage() {
         }
       ],
       activities: [
+        "Decoded Brain at UC San Diego - President",
         "IEEE RoboCup Team - AI Engineer",
         "Triton AI - Robotics Perception Engineer",
       ],

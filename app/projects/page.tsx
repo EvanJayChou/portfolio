@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Zap, Rocket, Brain, Globe, X, Calendar, Trophy, Code, Car, HeartPulse } from "lucide-react"
+import { ExternalLink, Github, Zap, Rocket, Brain, Globe, X, Calendar, Trophy, Code, Car, Camera } from "lucide-react"
 
 export default function ProjectsShowcase() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
@@ -13,30 +13,52 @@ export default function ProjectsShowcase() {
     {
       id: 1,
       title: "Coordinated Bipedal Robotics",
-      subtitle: "Multi-Agent Reinforcement Learning",
+      subtitle: "BDX OpenDuck and Isaac Lab",
       banner: "/placeholder.svg?height=120&width=400",
       description:
-        "Developing a multi-agent reinforcement learning system for coordinating bipedal robots in complex environments, enhancing their adaptability.",
+        "Researching reinforcement learning methods through simulations by coordinating bipedal robots in complex environments, enhancing their adaptability.",
       detailedDescription:
-        "Training and deploying Attention Models, Policy Networks, Shared Networks, and Value Networks using MAPPO for reinforcement learning-based robotics. Creating simulative environments for large-scale reinforcement learning and rendering using NVIDIA Isaac Sim with ROS 2 middleware integrations. Exploring Sim2Real and OpenUSD implementations.",
+        "Training and deploying the BDX OpenDuck URDF for parallel reinforcement learning-based policies. Creating simulative environments and rendering using NVIDIA Isaac Sim with Isaac Lab's RSL-RL framework. Exploring Sim2Real, OpenUSD, and Newton physics engine integrations.",
       period: "2025 - Present",
       status: "Current",
       category: "robotics",
       color: "from-purple-500 to-pink-500",
       icon: Zap,
-      technologies: ["Robot Operating System (ROS 2)", "Linux", "NVIDIA Isaac Sim", "Sim2Real", "PyTorch"],
+      technologies: ["Isaac Lab", "Isaac Sim", "MuJoCo", "Sim2Real", "PyTorch"],
       metrics: { completion: "50%", agents: "6+", frameworks: "5+" },
       achievements: [
         "TBD"
       ],
       challenges: [
         "Integrating Isaac Sim simulations with deep RL training scripts",
-        "Bridging ROS 2 middleware with simulative robots and deep RL models",
+        "Configuring environment and physics settings for wider robustness and domain adaptation",
       ],
-      links: { github: "https://github.com/EvanJayChou/marl_robotics"},
+      links: { github: "https://github.com/EvanJayChou/bdx_rl_isaac_lab"},
     },
     {
       id: 2,
+      title: "VLA Robotics Model",
+      subtitle: "Small-Scale Fusion and Training",
+      banner: "",
+      description: "",
+      detailedDescription: "",
+      period: "2026 - Present",
+      status: "Current",
+      category: "robotics",
+      color: "from-blue-500 to-purple-500",
+      icon: Camera,
+      technologies: ["Vision Language Action Models", "ViT Transformers", "Large Language Models", "VLA Encoding", "Simulative Testing"],
+      metrics: {},
+      achievements: [
+        "TBD"
+      ],
+      challenges: [
+        "TBD",
+      ],
+      links: {github: "https://github.com/EvanJayChou/vla_robotics"}
+    },
+    { 
+      id: 3,
       title: "Deep Learning for EEG Denoising",
       subtitle: "Transformers and Neural Signal Processing",
       banner: "./neuro.jpg?height=120&width=400",
@@ -62,7 +84,7 @@ export default function ProjectsShowcase() {
       links: {github: 'https://github.com/EvanJayChou/eeg_artifact_detection'},
     },
     {
-      id: 3,
+      id: 4,
       title: "Autonomous Line-Following Car",
       subtitle: "UCSD ECE 5 Final Project",
       banner: "./car.jpg?height=120&width=400",
@@ -89,7 +111,7 @@ export default function ProjectsShowcase() {
       links: {demo: "https://youtu.be/AOaCGNmPx2k?si=M8eV_QVU5v0xgr-1", website: "https://evanjaychou.github.io/ece5_lab4_jabe/"},
     },
     {
-      id: 4,
+      id: 5,
       title: "TensorPilot",
       subtitle: "Personalized AI Math/Educational Assistant",
       banner: "./tutor.png?height=120&width=400",
@@ -116,32 +138,6 @@ export default function ProjectsShowcase() {
       ],
       links: { github: "https://github.com/EvanJayChou/tensorpilot" },
     },
-    {
-      id: 5,
-      title: "Human Activity Recognition",
-      subtitle: "MLP for Sensor Classification",
-      banner: "./mlp.png?height=120&width=400",
-      description:
-        "Beginner-level project on MLP and neural networks using the Human Activity Recognition dataset from UCI Machine Learning Repository.",
-      detailedDescription:
-        "Developed a project introducing concepts in MLPs and neural networks, including PyTorch implementation, train/validation/test methods, and data preprocessing steps.",
-      period: "2025",
-      status: "Completed",
-      category: "ai-ml",
-      color: "from-blue-500 to-purple-500",
-      icon: HeartPulse,
-      technologies: ["Neural Networks", "Model Train and Testing", "Data Science"],
-      metrics: {accuracy: "95%", tests: "5", datasets: "2"},
-      achievements: [
-        "Achieved a 95% accuracy on the evaluation set with the trained MLP model.",
-        "Gained experience in fundamental deep learning concepts and training processes."
-      ],
-      challenges: [
-        "Understanding Torch datasets and dataloaders, and how to utilize them in ML projects.",
-        "Conducting exploratory data analysis to understand the dataset carefully before training."
-      ],
-      links: {github: "https://github.com/EvanJayChou/mlp_sensor_classification", dataset: "https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition"},
-    }
   ]
 
   // Publications and Honors Data

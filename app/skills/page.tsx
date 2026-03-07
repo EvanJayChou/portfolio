@@ -200,7 +200,7 @@ export default function SkillsPage() {
     {
       name: "Vivado",
       category: "ee",
-      proficiency: 10,
+      proficiency: 20,
       logo: "./logos/amd.webp?height=60&width=60",
       level: "Beginner",
       trending: false
