@@ -85,19 +85,19 @@ export default function ProjectsShowcase() {
     },
     {
       id: 4,
-      title: "Autonomous Line-Following Car",
-      subtitle: "UCSD ECE 5 Final Project",
+      title: "Autonomous Car w/ Autonomy and Perception",
+      subtitle: "UCSD ECE 148 Final Project",
       banner: "./car.jpg?height=120&width=400",
       description:
-        "Built an autonomous robot car that follows a black line track, with different PID settings tuned for each unique type of track.",
+        "Built an autonomous robot car that uses camera, LiDAR, and GPS sensor fusion for autonomous navigation",
       detailedDescription:
-        "Built and integrated embedded software, electronics hardware, and mechanical components into an autonomous robot car capable of following a black line track using photoresistor arrays. Fine-tuned different PID settings for each unique type of track through iterative trial and error.",
-      period: "2025",
-      status: "Completed",
+        "Built and integrated embedded software, electronics hardware, and mechanical components into an autonomous robot car capable of intelligently driving and navigating different settings. Leveraged sensor fusion and ROS 2 middleware for robot autonomy and perception.",
+      period: "2026",
+      status: "Current",
       category: "robotics",
       color: "from-yellow-500 to-green-500",
       icon: Car,
-      technologies: ["Embedded Programming", "Electronic Circuits", "PID Tuning", "Arduino", "C++"],
+      technologies: ["Embedded Programming", "Electronic Circuits", "Sensor Fusion", "LiDAR", "Computer Vision"],
       metrics: { accuracy: "90%", ranking: "6th", teammates: "3"},
       achievements: [
         "Ranked 5th in the course section for loop track with 25.07 loops completed in 2 minutes",
