@@ -15,8 +15,8 @@ export default function SkillsPage() {
   const skillCategories = [
     { id: "all", name: "All Skills", icon: Star, color: "bg-gradient-to-r from-purple-500 to-pink-500" },
     { id: "ai-ml", name: "AI/ML", icon: Brain, color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-    { id: "tools", name: "Robotics & Embedded Systems", icon: Zap, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
-    { id: "ee", name: "Electrical", icon: Zap, color: "bg-gradient-to-r from-yellow-500 to-orange-500"},
+    { id: "tools", name: "Robotics/Embedded", icon: Zap, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
+    { id: "ee", name: "Hardware", icon: Zap, color: "bg-gradient-to-r from-yellow-500 to-orange-500"},
     { id: "datascience", name: "Data Science", icon: Database, color: "bg-gradient-to-r from-green-500 to-emerald-500" },
     { id: "fullstack", name: "Full-Stack", icon: Code, color: "bg-gradient-to-r from-orange-500 to-red-500" },
     { id: "dev", name: "DevOps", icon: Wrench, color: "bg-gradient-to-r from-cyan-500 to-green-500"}
@@ -24,20 +24,20 @@ export default function SkillsPage() {
 
   const featuredSkills = [
     {
+      name: "ROS 2",
+      logo: "./logos/ros.jpg?height=60&width=60",
+      proficiency: 70,
+      experience: "1+ years",
+      projects: 2,
+      description: "Robotic systems for data telemetry and control systems."
+    },
+    {
       name: "PyTorch",
       logo: "./logos/torch.png?height=120&width=120",
       proficiency: 80,
       experience: "2+ years",
       projects: 4,
       description: "Deep learning model development and deployment at scale",
-    },
-    {
-      name: "Scikit-Learn",
-      logo: "./logos/sklearn.jpg?height=120&width=120",
-      proficiency: 85,
-      experience: "2+ years",
-      projects: 10,
-      description: "Machine learning algorithms, data preprocessing, and model evaluation",
     },
   ]
 
@@ -151,15 +151,15 @@ export default function SkillsPage() {
     {
       name: "ROS 2 (Robot Operating System)",
       category: "tools",
-      proficiency: 25,
+      proficiency: 70,
       logo: "./logos/ros.jpg?height=60&width=60",
-      level: "Beginner",
+      level: "Intermediate",
       trending: true,
     },
     {
       name: "Linux",
       category: "tools",
-      proficiency: 25,
+      proficiency: 70,
       logo: "./logos/linux.png?height=60&width=60",
       level: "Beginner",
       trending: false,
@@ -167,7 +167,7 @@ export default function SkillsPage() {
     {
       name:"Ubuntu",
       category: "tools",
-      proficiency: 25,
+      proficiency: 70,
       logo: "./logos/ubuntu.png?height=60&width=60",
       level: "Beginner",
       trending: false,
@@ -183,7 +183,7 @@ export default function SkillsPage() {
     {
       name: "Raspberry Pi",
       category: "tools",
-      proficiency: 50,
+      proficiency: 80,
       logo: "./logos/rasp.webp?height=60&width=60",
       level: "Intermediate",
       trending: false,
@@ -191,12 +191,20 @@ export default function SkillsPage() {
     {
       name: "Arduino",
       category: "tools",
-      proficiency: 30,
+      proficiency: 40,
       logo: "./logos/arduino.png?height=60&width=60",
       level: "Beginner",
       trending: true,
     },
     // EE
+    {
+      name: "Alitum Designer",
+      category: "ee",
+      proficency: 20,
+      logo: "./logos/altium.png?height=60&width=60",
+      level: "Beginner",
+      trending: true,
+    },
     {
       name: "Vivado",
       category: "ee",
@@ -208,7 +216,7 @@ export default function SkillsPage() {
     {
       name: "KiCAD",
       category: "ee",
-      proficiency: 15,
+      proficiency: 30,
       logo: "./logos/kicad.png?height=60&width=60",
       level: "Beginner",
       trending: false
@@ -299,7 +307,7 @@ export default function SkillsPage() {
     {
       name: "Docker",
       category: "dev",
-      proficiency: 15,
+      proficiency: 30,
       logo: "./logos/docker.png?height=60&width=60",
       level: "Beginner",
       trending: false

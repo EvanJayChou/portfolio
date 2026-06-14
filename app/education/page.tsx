@@ -40,7 +40,7 @@ export default function EducationPage() {
       location: "La Jolla, CA",
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027",
-      expectedGraduation: "June 2027",
+      expectedGraduation: "December 2027",
       gpa: "3.5",
       logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
@@ -61,9 +61,17 @@ export default function EducationPage() {
           code: "ECE 171A-B",
           name: "Linear Control System Theory",
           description: "Introduction to linear control systems, including system modeling, stability analysis, and control design.",
-          grade: "PL",
+          grade: "IP",
           credits: 8,
           term: "Spring 2026 - Fall 2026",
+        },
+        {
+          code: "ECE 180",
+          name: "Intro to AI on the Edge",
+          description: "Introduction to edge AI applications.",
+          grade: "IP",
+          credits: 4,
+          term: "Summer 2026"
         },
         {
           code: "ECE 109",

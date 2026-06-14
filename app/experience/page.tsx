@@ -6,7 +6,7 @@ import Image from "next/image"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "ML Research Scientist",
+      title: "Research Scientist",
       company: "Decoded Brain",
       location: "Pasadena, CA",
       period: "September 2025 - Present",

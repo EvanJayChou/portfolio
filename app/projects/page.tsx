@@ -85,58 +85,32 @@ export default function ProjectsShowcase() {
     },
     {
       id: 4,
-      title: "Autonomous Car w/ Autonomy and Perception",
+      title: "Scout Survey Rover",
       subtitle: "UCSD ECE 148 Final Project",
       banner: "./car.jpg?height=120&width=400",
       description:
-        "Built an autonomous robot car that uses camera, LiDAR, and GPS sensor fusion for autonomous navigation",
+        "Built a robot car capable of SLAM mapping and publishing mission reports.",
       detailedDescription:
-        "Built and integrated embedded software, electronics hardware, and mechanical components into an autonomous robot car capable of intelligently driving and navigating different settings. Leveraged sensor fusion and ROS 2 middleware for robot autonomy and perception.",
+        "Our project aimed to develop a SLAM and autonomous navigation system capable of fusing multiple sensors for mapping a full indoor room and localizing the robot's position. With telemetry data and logging from the ROS 2 system, we also aimed to expose the robot through a web-based controller and dashboard for remote control, and to generate mission reports from its exploration data.",
       period: "2026",
-      status: "Current",
+      status: "Completed",
       category: "robotics",
       color: "from-yellow-500 to-green-500",
       icon: Car,
-      technologies: ["Embedded Programming", "Electronic Circuits", "Sensor Fusion", "LiDAR", "Computer Vision"],
-      metrics: { accuracy: "90%", ranking: "6th", teammates: "3"},
+      technologies: ["SLAM", "Localization", "Odometry", "Embedded Firmware", "ROS2", "Back-End Web Dev"],
+      metrics: { accuracy: "75%", hours: "40", teammates: "4"},
       achievements: [
-        "Ranked 5th in the course section for loop track with 25.07 loops completed in 2 minutes",
-        "Ranked 7th for frequency sweep for successfully navigating 6.5 feet into the track"
+        "Successfully launched visual SLAM with an Extended Kalman Filter for robot localization",
+        "Integrated a web controller and dashboard for robot control via ROS 2 socket bridges.",
+        "Configured IMU odometry firmware and ROS 2 driver for the Seeed XIAO nRF52840 Sense.",
+        "Added rotational camera and LED strip features, and coded firmware for operating them via serial commands."
       ],
       challenges: [
-        "Debugging line-following functions in embeddded code",
-        "Ensuring circuit components and wiring are soldered correctly",
-        "PID tuning to ensure stable behaviors on various line tracks"
+        "Calibrating and finetuning parameters for EKF-related configurations, including VESC and IMU odometry.",
+        "Hardware limitations with CPU and RAM power forced us to lower frequencies of data publishing and perform timed launching.",
+        "Integrating Nav2 for autonomous navigation, which was not able to be accomplished during this time."
       ],
-      links: {demo: "https://youtu.be/AOaCGNmPx2k?si=M8eV_QVU5v0xgr-1", website: "https://evanjaychou.github.io/ece5_lab4_jabe/"},
-    },
-    {
-      id: 5,
-      title: "TensorPilot",
-      subtitle: "Personalized AI Math/Educational Assistant",
-      banner: "./tutor.png?height=120&width=400",
-      description:
-        "Developed an extensive AI note-taking app with the AI Club at PCC, focusing on tailored experiences for personalized education on-campus.",
-      detailedDescription:
-        "This cutting-edge project leverages agentic retrieval-augmented generation (RAG) systems to create a personalized AI educational assistant. The app integrates with various data sources, including lecture notes, textbooks, and online resources, to provide tailored learning experiences. It features advanced natural language processing capabilities, allowing users to interact with the AI in a conversational manner, ask questions, and receive contextually relevant answers.",
-      period: "2025",
-      status: "Completed",
-      category: "ai-ml",
-      color: "from-red-500 to-orange-500",
-      icon: Globe,
-      technologies: ["Agentic AI", "Model Context Protocol", "Retrieval Augmented Generation"],
-      metrics: { contributors: "5+", apis: "4+", frameworks: "5+" },
-      achievements: [
-        "Developed an agentic RAG system for personalized education",
-        "Orchestrated model context protocol for efficient API data retrieval",
-        "Prompt engineered Gemini 2.0 Flash for AI agent tool calling",
-      ],
-      challenges: [
-        "Configuring integration with a full-stack web application",
-        "Linking APIs to the MCP Host and Server",
-        "Improving mathematical reasoning capabilities",
-      ],
-      links: { github: "https://github.com/EvanJayChou/tensorpilot" },
+      links: {github: "https://github.com/UCSD-ECEMAE-148/148sp26-spring-2026-final-project-team-4"},
     },
   ]
 
