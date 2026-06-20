@@ -12,7 +12,7 @@ export default function ExperiencePage() {
       period: "September 2025 - Present",
       duration: "5 months",
       type: "Membership",
-      logoUrl: "./logos/db.png?height=60&width=60",
+      logoUrl: "./logos/db.jpg?height=60&width=60",
       status: "Current",
       description:
         "",
@@ -31,11 +31,14 @@ export default function ExperiencePage() {
       logoUrl: "./logos/ieee.png?height=60&width=60",
       status: "Current",
       description:
-        "",
+        "Developed AI models and software systems for the IEEE RoboCup (TritonBots) team in our participation at the RoboCup SSL International Competition. Built game controller logic and networking for Sim2Real deployment and SSL gameplay rules.",
       achievements: [
+        "Designed modular RL simulator infrastructure, accelerating productivity by ~80%, supporting 6+ concurrent experiments.",
+        "Trained intelligent soccer-playing robots using Hierarchical State Machine AI, Joint Action Learning, and Curriculum Learning techniques with Gym for simulation environments, leading to ~90% success with passing and scoring goals.",
+        "Transferred RL policies to real-world control using low-level serial commands, leading to 95% success with Sim2Real transfer."
 
       ],
-      technologies: ["PyTorch", "Stable Baselines", "Simulations Software"]
+      technologies: ["PyTorch", "Stable Baselines", "Simulations"]
     },
     {
       title: "Robotics Perception Engineer",
@@ -63,9 +66,10 @@ export default function ExperiencePage() {
       logoUrl: "./logos/qi.jpg?height=60&width=60",
       status: "Current",
       description: 
-        "",
+        "Developed agentic AI systems and backends for telecomm construction dashboards under Telorics (Congruex). Leveraged OpenAI GPT models and context engineering to enable AI-assisted customer requests and lookups.",
       achievements: [
-
+        "Integrated API endpoints from Postman docs for automated data retrievals using GPT and multi-agentic planning and reasoning.",
+        "Shipped backend modules for natural language queries in dataset retreivals via parameter-based extraction."
       ],
       technologies: ["AWS", "Docker", "OpenAI API","SQL", "Prompt Engineering"]
     },
