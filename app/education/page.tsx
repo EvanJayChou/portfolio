@@ -41,7 +41,7 @@ export default function EducationPage() {
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027",
       expectedGraduation: "December 2027",
-      gpa: "3.5",
+      gpa: "3.55",
       logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
       description:
@@ -53,7 +53,7 @@ export default function EducationPage() {
           code: "ECE 148",
           name: "Intro to Autonomous Vehicles",
           description: "Introduction to AV systems, including robot autonomy, deep learning-based perception, embedded systems with Linux OS.",
-          grade: "IP",
+          grade: "A+",
           credits: 4,
           term: "Spring 2026"
         },
@@ -61,14 +61,14 @@ export default function EducationPage() {
           code: "ECE 171A-B",
           name: "Linear Control System Theory",
           description: "Introduction to linear control systems, including system modeling, stability analysis, and control design.",
-          grade: "IP",
+          grade: "A-",
           credits: 8,
           term: "Spring 2026 - Fall 2026",
         },
         {
           code: "ECE 180",
           name: "Intro to AI on the Edge",
-          description: "Introduction to edge AI applications.",
+          description: "Introduction to edge AI applications with computer vision, LLMs, and embedded firmware using the Arduino Uno Q.",
           grade: "IP",
           credits: 4,
           term: "Summer 2026"
@@ -85,7 +85,7 @@ export default function EducationPage() {
           code: "COGS 108",
           name: "Data Science in Practice",
           description: "Introduction to data science methods, including data augmentation, manipulation, and analysis.",
-          grade: "IP",
+          grade: "A-",
           credits: 4,
           term: "Spring 2026"
         }
@@ -93,14 +93,15 @@ export default function EducationPage() {
       achievements: [
         {
           title: "Provost Honors",
-          description: "Attained a 3.5 GPA in Fall 2025 quarter",
-          date: "Fall 2025",
+          description: "Attained a 3.5 GPA in FA25, and 3.8 GPA in SP26.",
+          date: "Fall 2025, Spring 2026",
           icon: Award
         }
       ],
       activities: [
-        "Decoded Brain at UC San Diego - President",
-        "IEEE RoboCup Team - AI Engineer",
+        "IEEE RoboCup Team - AI Lead (26-27)",
+        "IEEE RoboCup Team - AI Engineer (25-26)",
+        "Decoded Brain at UC San Diego - Founding President",
         "Triton AI - Robotics Perception Engineer",
       ],
     },

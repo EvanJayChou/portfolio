@@ -139,14 +139,6 @@ export default function SkillsPage() {
       level: "Beginner",
       trending: true,
     },
-    {
-      name: "NLTK",
-      category: "ai-ml",
-      proficiency: 60,
-      logo: "./placeholder.svg?height=60&width=60",
-      level: "Intermediate",
-      trending: false,
-    },
     // Robotics & Embedded Systems
     {
       name: "ROS 2 (Robot Operating System)",

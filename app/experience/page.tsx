@@ -22,14 +22,29 @@ export default function ExperiencePage() {
       technologies: ["PyTorch", "Scikit-Learn"]
     },
     {
-      title: "RoboCup AI Engineer",
+      title: "RoboCup AI Team Lead",
       company: "IEEE Student Branch at UCSD",
       location: "La Jolla, CA",
-      period: "October 2025 - Present",
-      duration: "4 months",
+      period: "June 2026 - Present",
+      duration: "1 month",
       type: "Membership",
       logoUrl: "./logos/ieee.png?height=60&width=60",
       status: "Current",
+      description: "",
+      achievements: [
+        
+      ],
+      technologies: [],
+    },
+    {
+      title: "RoboCup AI Engineer",
+      company: "IEEE Student Branch at UCSD",
+      location: "La Jolla, CA",
+      period: "October 2025 - June 2026",
+      duration: "9 months",
+      type: "Membership",
+      logoUrl: "./logos/ieee.png?height=60&width=60",
+      status: "Completed",
       description:
         "Developed AI models and software systems for the IEEE RoboCup (TritonBots) team in our participation at the RoboCup SSL International Competition. Built game controller logic and networking for Sim2Real deployment and SSL gameplay rules.",
       achievements: [
@@ -60,11 +75,11 @@ export default function ExperiencePage() {
       title: "AI/ML Research Engineer",
       company: "Qualcomm Institute - UC San Diego Division of Calit2",
       location: "La Jolla, CA",
-      period: "October 2025 - Present",
+      period: "October 2025 - June 2026",
       duration: "4 months",
       type: "Part-Time",
       logoUrl: "./logos/qi.jpg?height=60&width=60",
-      status: "Current",
+      status: "Completed",
       description: 
         "Developed agentic AI systems and backends for telecomm construction dashboards under Telorics (Congruex). Leveraged OpenAI GPT models and context engineering to enable AI-assisted customer requests and lookups.",
       achievements: [
@@ -77,11 +92,11 @@ export default function ExperiencePage() {
       title: "Machine Learning Research Intern",
       company: "NASA Jet Propulsion Laboratory",
       location: "Pasadena, CA",
-      period: "June 2025 - Present",
+      period: "June 2025 - December 2025",
       duration: "8 months",
       type: "Internship",
       logoUrl: "./jpl.webp?height=60&width=60",
-      status: "Current",
+      status: "Completed",
       description:
         "Investigated the application of computer vision and semantic segmentation techniques in geological feature identification on Venus. Optimized and evaluated ensemble models on Venus SAR images.",
       achievements: [

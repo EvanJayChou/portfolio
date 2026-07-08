@@ -57,6 +57,7 @@ export default function ProjectsShowcase() {
       ],
       links: {github: "https://github.com/EvanJayChou/vla_robotics"}
     },
+    /*
     { 
       id: 3,
       title: "Deep Learning for EEG Denoising",
@@ -83,8 +84,9 @@ export default function ProjectsShowcase() {
       ],
       links: {github: 'https://github.com/EvanJayChou/eeg_artifact_detection'},
     },
+    */
     {
-      id: 4,
+      id: 3,
       title: "Scout Survey Rover",
       subtitle: "UCSD ECE 148 Final Project",
       banner: "./car.jpg?height=120&width=400",
@@ -112,6 +114,30 @@ export default function ProjectsShowcase() {
       ],
       links: {github: "https://github.com/UCSD-ECEMAE-148/148sp26-spring-2026-final-project-team-4"},
     },
+    {
+      id: 4,
+      title: "BioVision Arm - Edge-Controlled Bionic Tracking",
+      subtitle: "UCSD ECE 180 Final Project",
+      banner: "/placeholder.svg?height=120&width=400",
+      description:
+        "Building a mechanical arm controlled by EMG sensors and computer vision.",
+      detailedDescription:
+        "TBD",
+      period: "2026",
+      status: "Current",
+      category: "robotics",
+      color: "from-green-500 to-blue-500",
+      icon: Brain,
+      technologies: ["EMG Sensing", "Edge Inference", "Machine Learning", "Embedded Firmware"],
+      metrics: { teammates: "3"},
+      achievements: [
+        "TBD",
+      ],
+      challenges: [
+        "TBD",
+      ],
+      links: {},
+    }
   ]
 
   // Publications and Honors Data
