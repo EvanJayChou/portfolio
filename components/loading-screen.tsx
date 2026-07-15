@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { usePathname } from "next/navigation"
 
@@ -14,6 +14,21 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [progress, setProgress] = useState(0)
   const pathname = usePathname()
+  const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const clearHideTimer = () => {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current)
+      hideTimerRef.current = null
+    }
+  }
+
+  const completeLoading = () => {
+    clearHideTimer()
+    hideTimerRef.current = setTimeout(() => {
+      setIsLoading(false)
+    }, 300)
+  }
 
   // Track which pages have been visited
   useEffect(() => {
@@ -23,6 +38,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
 
     // If this page has been visited before, skip loading
     if (visitedPages.includes(pathname)) {
+      clearHideTimer()
       setIsLoading(false)
       return
     }
@@ -31,6 +47,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
     sessionStorage.setItem("visitedPages", JSON.stringify([...visitedPages, pathname]))
 
     // Start loading process for new pages
+    clearHideTimer()
     setIsLoading(true)
     setProgress(0)
 
@@ -38,6 +55,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval)
+          completeLoading()
           return 100
         }
         return prev + Math.random() * 15
@@ -50,7 +68,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
       let loadedImages = 0
 
       if (images.length === 0) {
-        setIsLoading(false)
+        completeLoading()
         return
       }
 
@@ -58,9 +76,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
         loadedImages++
         if (loadedImages >= images.length) {
           setProgress(100)
-          setTimeout(() => {
-            setIsLoading(false)
-          }, 500)
+          completeLoading()
         }
       }
 
@@ -77,6 +93,7 @@ export default function LoadingScreen({ children }: LoadingScreenProps) {
     return () => {
       clearInterval(interval)
       clearTimeout(timer)
+      clearHideTimer()
     }
   }, [pathname]) // Re-run when the pathname changes
 
