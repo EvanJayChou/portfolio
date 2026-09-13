@@ -26,8 +26,8 @@ export default function SkillsPage() {
     {
       name: "ROS 2",
       logo: "./logos/ros.jpg?height=60&width=60",
-      proficiency: 70,
-      experience: "1+ years",
+      proficiency: 75,
+      experience: "2+ years",
       projects: 2,
       description: "Robotic systems for data telemetry and control systems."
     },
@@ -35,7 +35,7 @@ export default function SkillsPage() {
       name: "PyTorch",
       logo: "./logos/torch.png?height=120&width=120",
       proficiency: 80,
-      experience: "2+ years",
+      experience: "3+ years",
       projects: 4,
       description: "Deep learning model development and deployment at scale",
     },
@@ -116,22 +116,6 @@ export default function SkillsPage() {
       trending: false,
     },
     {
-      name:"AutoGen",
-      category: "ai-ml",
-      proficiency: 60,
-      logo: "./logos/msft.png?height=60&width=60",
-      level: "Beginner",
-      trending: false,
-    },
-    {
-      name:"Semantic Kernel",
-      category: "ai-ml",
-      proficiency: 20,
-      logo: "./logos/msft.png?height=60&width=60",
-      level: "Beginner",
-      trending: false,
-    },
-    {
       name: "CUDA",
       category: "ai-ml",
       proficiency: 30,
@@ -173,9 +157,17 @@ export default function SkillsPage() {
       trending: true,
     },
     {
+      name: "MuJoCo",
+      category: "tools",
+      proficiency: 15,
+      logo: "./logos/deepmind.png?height=60&width=60",
+      level: "Beginner",
+      trending: true,
+    },
+    {
       name: "Raspberry Pi",
       category: "tools",
-      proficiency: 80,
+      proficiency: 100,
       logo: "./logos/rasp.webp?height=60&width=60",
       level: "Intermediate",
       trending: false,
@@ -183,7 +175,7 @@ export default function SkillsPage() {
     {
       name: "Arduino",
       category: "tools",
-      proficiency: 40,
+      proficiency: 100,
       logo: "./logos/arduino.png?height=60&width=60",
       level: "Beginner",
       trending: true,
@@ -192,7 +184,7 @@ export default function SkillsPage() {
     {
       name: "Alitum Designer",
       category: "ee",
-      proficency: 20,
+      proficency: 50,
       logo: "./logos/altium.png?height=60&width=60",
       level: "Beginner",
       trending: true,
@@ -208,7 +200,7 @@ export default function SkillsPage() {
     {
       name: "KiCAD",
       category: "ee",
-      proficiency: 30,
+      proficiency: 50,
       logo: "./logos/kicad.png?height=60&width=60",
       level: "Beginner",
       trending: false
@@ -216,7 +208,7 @@ export default function SkillsPage() {
     {
       name: "LTSpice",
       category: "ee",
-      proficiency: 10,
+      proficiency: 25,
       logo: "./placeholder.svg?height=60&width=60",
       level: "Beginner",
       trending: false

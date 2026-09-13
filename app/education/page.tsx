@@ -467,14 +467,14 @@ export default function EducationPage() {
                   <BookOpen className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
-                  <CardTitle>NASA Open Science Credential</CardTitle>
+                  <CardTitle>AI/ML for Space Biology Research</CardTitle>
                   <CardDescription>NASA</CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Completed a comprehensive course on open science practices, data management, and reproducibility in research.
+                Completed a comprehensive course on data science practices, AI/ML methods, and reproducibility in space biology research.
               </p>
               <div className="flex justify-between items-center">
                 <Badge variant="outline">Completed 2025</Badge>

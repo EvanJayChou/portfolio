@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Calendar, Users, Award, TrendingUp } from "lucide-react"
+import { MapPin, Calendar, Award, GraduationCap, BriefcaseBusiness } from "lucide-react"
 import Image from "next/image"
 
 export default function ExperiencePage() {
@@ -14,11 +14,12 @@ export default function ExperiencePage() {
       type: "Membership",
       logoUrl: "./logos/jsoe.jpeg?height=60&width=60",
       status: "Current",
-      description: "",
+      category: "work",
+      description: "Researching uncertainty-guided autonomous exploration via online 3D Gaussian Splatting on low-cost robotic platforms. Designing a dual-compute system using RGB-D for real-time 3D scene reconstruction & environmental state representation. Developing an uncertainty-driven frontier selection policy to autonomously explore toward regions of unknown environments.",
       achievements: [
 
       ],
-      technologies: [],
+      technologies: ["3D Gaussian Splatting", "RGB-D", "SLAM", "Extended Kalman Filtering", "ROS2", "Cyclone DDS"],
     },
     {
       title: "RoboCup AI Team Lead",
@@ -29,6 +30,7 @@ export default function ExperiencePage() {
       type: "Membership",
       logoUrl: "./logos/ieee.png?height=60&width=60",
       status: "Current",
+      category: "school",
       description: "",
       achievements: [
         
@@ -44,12 +46,12 @@ export default function ExperiencePage() {
       type: "Membership",
       logoUrl: "./logos/ieee.png?height=60&width=60",
       status: "Completed",
+      category: "school",
       description:
         "Developed AI models and software systems for the IEEE RoboCup (TritonBots) team in our participation at the RoboCup SSL International Competition. Built game controller logic and networking for Sim2Real deployment and SSL gameplay rules.",
       achievements: [
         "Designed modular RL simulator infrastructure, accelerating productivity by ~80%, supporting 6+ concurrent experiments.",
         "Trained intelligent soccer-playing robots using Hierarchical State Machine AI, Joint Action Learning, and Curriculum Learning techniques with Gym for simulation environments, leading to ~90% success with passing and scoring goals.",
-        "Transferred RL policies to real-world control using low-level serial commands, leading to 95% success with Sim2Real transfer."
 
       ],
       technologies: ["PyTorch", "Stable Baselines", "Simulations"]
@@ -63,12 +65,13 @@ export default function ExperiencePage() {
       type: "Membership",
       logoUrl: "./logos/tritonai.png?height=60&width=60",
       status: "Current",
+      category: "school",
       description:
         "",
       achievements: [
 
       ],
-      technologies: ["ROS2", "LiDAR"]
+      technologies: ["SLAM", "LIO/VIO Odometry", "Sensor Fusion", "Jetson", "ROS2"]
     },
     {
       title: "AI/ML Research Engineer",
@@ -79,6 +82,7 @@ export default function ExperiencePage() {
       type: "Part-Time",
       logoUrl: "./logos/qi.jpg?height=60&width=60",
       status: "Completed",
+      category: "work",
       description: 
         "Developed agentic AI systems and backends for telecomm construction dashboards under Telorics (Congruex). Leveraged OpenAI GPT models and context engineering to enable AI-assisted customer requests and lookups.",
       achievements: [
@@ -96,6 +100,7 @@ export default function ExperiencePage() {
       type: "Internship",
       logoUrl: "./jpl.webp?height=60&width=60",
       status: "Completed",
+      category: "work",
       description:
         "Investigated the application of computer vision and semantic segmentation techniques in geological feature identification on Venus. Optimized and evaluated ensemble models on Venus SAR images.",
       achievements: [
@@ -114,6 +119,7 @@ export default function ExperiencePage() {
       type: "Internship",
       logoUrl: "./jpl.webp?height=60&width=60",
       status: "Completed",
+      category: "work",
       description:
         "Investigated different deep learning architectures for multivariate time-series anomaly detection within Deep Space Network communications ground systems and multimodal antenna/transmitter telemetry. Prototyped and orchestrated an AI agent system and workflow capable of complex reasoning and cross-validation for true anomalies using a fine-tuned LLM agent.",
       achievements: [
@@ -128,101 +134,129 @@ export default function ExperiencePage() {
   return (
     <div className="container mx-auto max-w-6xl px-4 py-24">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-green-500 to-blue-500 bg-clip-text text-transparent">Professional Experience</h1>
+        <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-green-500 to-blue-500 bg-clip-text text-transparent">Experience</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          A journey through my career in AI/ML engineering and data science, building innovative solutions and leading
-          high-impact projects.
+          A journey through my professional work and school extracurricular experiences in AI/ML engineering,
+          robotics, and data science.
         </p>
       </div>
 
-      <div className="relative">
-        {/* Timeline line */}
-        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block"></div>
+      {[
+        {
+          id: "professional-experience",
+          title: "Professional Experience",
+          description: "Work experience building and deploying AI/ML systems and data-driven solutions.",
+          icon: BriefcaseBusiness,
+          category: "work",
+        },
+        {
+          id: "school-extracurriculars",
+          title: "School Extracurricular Experience",
+          description: "Research and student organization experiences at UC San Diego.",
+          icon: GraduationCap,
+          category: "school",
+        },
+      ].map((section) => {
+        const SectionIcon = section.icon
+        const sectionExperiences = experiences.filter((experience) => experience.category === section.category)
 
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative">
-              {/* Timeline dot */}
-              <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg hidden md:block z-10"></div>
+        return (
+          <section key={section.id} id={section.id} className="mb-16 scroll-mt-24">
+            <div className="mb-8">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <SectionIcon className="h-7 w-7 text-primary" />
+                <h2 className="text-3xl font-bold">{section.title}</h2>
+              </div>
+              <p className="text-center text-muted-foreground">{section.description}</p>
+            </div>
 
-              <div className="md:ml-20">
-                <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-l-4 border-l-primary">
-                  <CardHeader className="bg-gradient-to-r from-primary/5 to-transparent">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                      <div className="flex items-start gap-4">
-                        <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-xl border-2 border-primary/20 bg-background shadow-md">
-                          <Image
-                            src={exp.logoUrl || "/placeholder.svg"}
-                            alt={`${exp.company} logo`}
-                            fill
-                            className="object-contain p-2"
-                          />
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-1">
-                            <CardTitle className="text-xl">{exp.title}</CardTitle>
-                            <Badge variant={exp.status === "Current" ? "default" : "secondary"} className="text-xs">
-                              {exp.status}
-                            </Badge>
-                          </div>
-                          <CardDescription className="text-lg font-semibold text-primary">
-                            {exp.company}
-                          </CardDescription>
-                          <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-muted-foreground">
-                            <div className="flex items-center gap-1">
-                              <MapPin className="h-4 w-4" />
-                              {exp.location}
+            <div className="relative">
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block"></div>
+
+              <div className="space-y-8">
+                {sectionExperiences.map((exp, index) => (
+                  <div key={index} className="relative">
+                    <div className="absolute left-6 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg hidden md:block z-10"></div>
+
+                    <div className="md:ml-20">
+                      <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-l-4 border-l-primary">
+                        <CardHeader className="bg-gradient-to-r from-primary/5 to-transparent">
+                          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+                            <div className="flex items-start gap-4">
+                              <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-xl border-2 border-primary/20 bg-background shadow-md">
+                                <Image
+                                  src={exp.logoUrl || "/placeholder.svg"}
+                                  alt={`${exp.company} logo`}
+                                  fill
+                                  className="object-contain p-2"
+                                />
+                              </div>
+                              <div className="flex-1">
+                                <div className="flex items-center gap-2 mb-1">
+                                  <CardTitle className="text-xl">{exp.title}</CardTitle>
+                                  <Badge variant={exp.status === "Current" ? "default" : "secondary"} className="text-xs">
+                                    {exp.status}
+                                  </Badge>
+                                </div>
+                                <CardDescription className="text-lg font-semibold text-primary">
+                                  {exp.company}
+                                </CardDescription>
+                                <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-muted-foreground">
+                                  <div className="flex items-center gap-1">
+                                    <MapPin className="h-4 w-4" />
+                                    {exp.location}
+                                  </div>
+                                  <div className="flex items-center gap-1">
+                                    <Calendar className="h-4 w-4" />
+                                    {exp.period} ({exp.duration})
+                                  </div>
+                                  <Badge variant="outline" className="text-xs">
+                                    {exp.type}
+                                  </Badge>
+                                </div>
+                              </div>
                             </div>
-                            <div className="flex items-center gap-1">
-                              <Calendar className="h-4 w-4" />
-                              {exp.period} ({exp.duration})
-                            </div>
-                            <Badge variant="outline" className="text-xs">
-                              {exp.type}
-                            </Badge>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </CardHeader>
+                        </CardHeader>
 
-                  <CardContent className="pt-6">
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{exp.description}</p>
+                        <CardContent className="pt-6">
+                          <p className="text-muted-foreground mb-6 leading-relaxed">{exp.description}</p>
 
-                    {/* Key Achievements */}
-                    <div className="mb-6">
-                      <div className="flex items-center gap-2 mb-3">
-                        <Award className="h-5 w-5 text-primary" />
-                        <h4 className="font-semibold">Key Achievements</h4>
-                      </div>
-                      <ul className="space-y-2">
-                        {exp.achievements.map((achievement, achievementIndex) => (
-                          <li key={achievementIndex} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-sm text-muted-foreground">{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                          <div className="mb-6">
+                            <div className="flex items-center gap-2 mb-3">
+                              <Award className="h-5 w-5 text-primary" />
+                              <h4 className="font-semibold">Key Achievements</h4>
+                            </div>
+                            <ul className="space-y-2">
+                              {exp.achievements.map((achievement, achievementIndex) => (
+                                <li key={achievementIndex} className="flex items-start gap-2">
+                                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                  <span className="text-sm text-muted-foreground">{achievement}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
 
-                    {/* Technologies */}
-                    <div>
-                      <h4 className="font-semibold mb-3">Technologies & Tools</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech, techIndex) => (
-                          <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-1">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
+                          <div>
+                            <h4 className="font-semibold mb-3">Technologies & Tools</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {exp.technologies.map((tech, techIndex) => (
+                                <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-1">
+                                  {tech}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+          </section>
+        )
+      })}
 
       {/* Call to Action */}
       <div className="text-center mt-16 p-8 bg-gradient-to-r from-primary/5 to-transparent rounded-xl">
