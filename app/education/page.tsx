@@ -99,11 +99,11 @@ export default function EducationPage() {
         }
       ],
       activities: [
-        "TA for ECE/MAE 148, DSC 190",
+        "Teaching Assistant - ECE/MAE 148, DSC 190",
         "IEEE RoboCup Team - AI Lead (26-27)",
         "IEEE RoboCup Team - AI Engineer (25-26)",
-        "Decoded Brain at UC San Diego - Founding President",
-        "Triton AI - Robotics Perception Engineer",
+        "Triton AI - Jeep Bot Project Lead (26-27)",
+        "Triton AI - Robotics Software Engineer",
       ],
     },
     {
