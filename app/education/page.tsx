@@ -69,7 +69,7 @@ export default function EducationPage() {
           code: "ECE 180",
           name: "Intro to AI on the Edge",
           description: "Introduction to edge AI applications with computer vision, LLMs, and embedded firmware using the Arduino Uno Q.",
-          grade: "IP",
+          grade: "A+",
           credits: 4,
           term: "Summer 2026"
         },
@@ -99,10 +99,11 @@ export default function EducationPage() {
         }
       ],
       activities: [
+        "Teaching Assistant - ECE/MAE 148, DSC 190",
         "IEEE RoboCup Team - AI Lead (26-27)",
         "IEEE RoboCup Team - AI Engineer (25-26)",
-        "Decoded Brain at UC San Diego - Founding President",
-        "Triton AI - Robotics Perception Engineer",
+        "Triton AI - Jeep Bot Project Lead (26-27)",
+        "Triton AI - Robotics Software Engineer",
       ],
     },
     {

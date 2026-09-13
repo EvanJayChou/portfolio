@@ -6,22 +6,6 @@ import Image from "next/image"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "Research Scientist",
-      company: "Decoded Brain",
-      location: "Pasadena, CA",
-      period: "September 2025 - Present",
-      duration: "5 months",
-      type: "Membership",
-      logoUrl: "./logos/db.jpg?height=60&width=60",
-      status: "Current",
-      description:
-        "",
-      achievements: [
-
-      ],
-      technologies: ["PyTorch", "Scikit-Learn"]
-    },
-    {
       title: "RoboCup AI Team Lead",
       company: "IEEE Student Branch at UCSD",
       location: "La Jolla, CA",
@@ -56,7 +40,7 @@ export default function ExperiencePage() {
       technologies: ["PyTorch", "Stable Baselines", "Simulations"]
     },
     {
-      title: "Robotics Perception Engineer",
+      title: "Robotics Software Engineer",
       company: "Triton AI",
       location: "La Jolla, CA",
       period: "October 2025 - Present",
@@ -69,7 +53,7 @@ export default function ExperiencePage() {
       achievements: [
 
       ],
-      technologies: ["ROS 2", "LiDAR"]
+      technologies: ["ROS2", "LiDAR"]
     },
     {
       title: "AI/ML Research Engineer",
@@ -124,24 +108,6 @@ export default function ExperiencePage() {
       ],
       technologies: ["PyTorch", "Scikit-Learn", "LangChain", "LangGraph", "CUDA", "Ollama", "Hugging Face Transformers"],    
     },
-    {
-      title:"President and Co-Founder",
-      company:"Artifical Intelligence Club at PCC",
-      location: "San Marino, CA",
-      period: "September 2024 - May 2025",
-      duration: "9 months",
-      type: "Extracurricular",
-      logoUrl: "./aiclub.png?height=60&width=60",
-      status: "Completed",
-      description:
-        "Co-founded a student-driven AI/ML research club, organized coding workshops and 3+ collaborative projects on applied AI/ML and interdisciplinary research. Partnered and networked with research professors and industry experts to encourage more knowledge-sharing and professional development opportunities, providing more impact to STEM initiatives on campus and encouraging ethical and effective AI uses/applications.",
-      achievements: [
-        "Lead organized the AI Horizons Convention, a large-scale event at PCC which hosted 150+ attendees and guests from Microsoft, Caltech, NASA JPL, etc.",
-        "Established partnerships with other organizations and universities to provide students with career development opportunities in AI/ML.",
-        "Built and fostered a community of over 200 students from 7+ different disciplines and clubs on campus, promoting interdisciplinary collaboration and knowledge sharing.",
-      ],
-      technologies: ["PyTorch", "React", "Node.js", "Next.js", "Tailwind CSS"],
-    }
   ]
 
   return (

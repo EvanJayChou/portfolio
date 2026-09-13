@@ -57,34 +57,6 @@ export default function ProjectsShowcase() {
       ],
       links: {github: "https://github.com/EvanJayChou/vla_robotics"}
     },
-    /*
-    { 
-      id: 3,
-      title: "Deep Learning for EEG Denoising",
-      subtitle: "Transformers and Neural Signal Processing",
-      banner: "./neuro.jpg?height=120&width=400",
-      description:
-        "Investigating deep learning methods and transformer architectures for EEG denoising and artifact cleansing, with applications in neural signal processing.",
-      detailedDescription:
-        "Researching different EEG denoiser models, such as CLENet, EEG Conformer, and EEGDfus for cleaning noisy EEG data in real-time. Testing and experimenting with different architectures and training processes to improve SNR and clean signal processing.",
-      period: "2025 - Present",
-      status: "Current",
-      category: "ai-ml",
-      color: "from-green-500 to-blue-500",
-      icon: Brain,
-      technologies: ["Deep Learning", "Transformers", "Neural Signal Processing"],
-      metrics: {architectures: "3+", studies: "6+", experiments: "10+"},
-      achievements: [
-
-      ],
-      challenges: [
-        "Reading and replicating previous EEG denoising studies",
-        "Understanding various transformer components and use cases",
-        "Communicating with a wider neuroscience community about research methods and terminology"
-      ],
-      links: {github: 'https://github.com/EvanJayChou/eeg_artifact_detection'},
-    },
-    */
     {
       id: 3,
       title: "Scout Survey Rover",
@@ -112,7 +84,7 @@ export default function ProjectsShowcase() {
         "Hardware limitations with CPU and RAM power forced us to lower frequencies of data publishing and perform timed launching.",
         "Integrating Nav2 for autonomous navigation, which was not able to be accomplished during this time."
       ],
-      links: {github: "https://github.com/UCSD-ECEMAE-148/148sp26-spring-2026-final-project-team-4"},
+      links: {github: "https://github.com/UCSD-Silberman-Classes-and-Projects/148sp26-spring-2026-final-project-team-4"},
     },
     {
       id: 4,
@@ -131,12 +103,18 @@ export default function ProjectsShowcase() {
       technologies: ["EMG Sensing", "Edge Inference", "Machine Learning", "Embedded Firmware"],
       metrics: { teammates: "3"},
       achievements: [
-        "TBD",
+        "3D printed and assembled robotic arm",
+        "Electrically wired camera, PWM, servos, EMG sensors into 1 AUQ board",
+        "Computer Vision Model for 2 degrees of freedom of arm tracking",
+        "EMG AI/ML Deep Learning Model for 3rd degree of freedom (pinch and release)",
+        "Ran both models on the AUQ, using the XNNPACK CPU acceleration framework"
       ],
       challenges: [
-        "TBD",
+        "Lowering latency of CV arm tracker, accomplished by removing the real-time video capture cache",
+        "Onboarding one of the models onto the AUQ's GPU and accelerator framework, which was not compatible with scikit-learn and OpenCV/mediapipe libraries",
+        "Figuring out how to record accurate EMG readings for different muscle strengths depending on electrode placement",
       ],
-      links: {},
+      links: {github: "https://github.com/UCSD-Silberman-Classes-and-Projects/UCSD-ECE180-SUMMER_I-Final_Project-Team_5"},
     }
   ]
 
