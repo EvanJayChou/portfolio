@@ -41,7 +41,7 @@ export default function EducationPage() {
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027",
       expectedGraduation: "December 2027",
-      gpa: "3.55",
+      gpa: "3.58",
       logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
       description:
@@ -69,7 +69,7 @@ export default function EducationPage() {
           code: "ECE 180",
           name: "Intro to AI on the Edge",
           description: "Introduction to edge AI applications with computer vision, LLMs, and embedded firmware using the Arduino Uno Q.",
-          grade: "IP",
+          grade: "A+",
           credits: 4,
           term: "Summer 2026"
         },
@@ -99,6 +99,7 @@ export default function EducationPage() {
         }
       ],
       activities: [
+        "TA for ECE/MAE 148, DSC 190",
         "IEEE RoboCup Team - AI Lead (26-27)",
         "IEEE RoboCup Team - AI Engineer (25-26)",
         "Decoded Brain at UC San Diego - Founding President",

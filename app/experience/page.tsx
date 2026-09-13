@@ -6,20 +6,19 @@ import Image from "next/image"
 export default function ExperiencePage() {
   const experiences = [
     {
-      title: "Research Scientist",
-      company: "Decoded Brain",
-      location: "Pasadena, CA",
-      period: "September 2025 - Present",
-      duration: "5 months",
+      title: "ECE Honors Researcher",
+      company: "UCSD ECE Department",
+      location: "La Jolla, CA",
+      period: "August 2026 - Present",
+      duration: "1 month",
       type: "Membership",
-      logoUrl: "./logos/db.jpg?height=60&width=60",
+      logoUrl: "./logos/jsoe.jpeg?height=60&width=60",
       status: "Current",
-      description:
-        "",
+      description: "",
       achievements: [
 
       ],
-      technologies: ["PyTorch", "Scikit-Learn"]
+      technologies: [],
     },
     {
       title: "RoboCup AI Team Lead",
@@ -123,6 +122,22 @@ export default function ExperiencePage() {
         "Presented findings and prototype to the DSN Systems Engineering Group, receiving positive feedback and interest for further development.",
       ],
       technologies: ["PyTorch", "Scikit-Learn", "LangChain", "LangGraph", "CUDA", "Ollama", "Hugging Face Transformers"],    
+    },
+    {
+      title: "Research Scientist",
+      company: "Decoded Brain at UCSD",
+      location: "La Jolla, CA",
+      period: "September 2025 - Present",
+      duration: "5 months",
+      type: "Membership",
+      logoUrl: "./logos/db.jpg?height=60&width=60",
+      status: "Current",
+      description:
+        "",
+      achievements: [
+
+      ],
+      technologies: ["PyTorch", "Scikit-Learn"]
     },
     {
       title:"President and Co-Founder",
