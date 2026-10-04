@@ -38,16 +38,41 @@ export default function EducationPage() {
       name: "University of California: San Diego",
       shortName: "UC San Diego",
       location: "La Jolla, CA",
+      degree: "Master of Science in Electrical and Computer Engineering",
+      period: "2027-2028",
+      expectedGraduation: "June 2028",
+      gpa: "N/A",
+      logoUrl: "./ucsd.png?height=120&width=120",
+      status: "Current",
+      description:
+        "Pursuing a Master's degree (BS/MS) with a focus on intelligent systems, robotics, and control.",
+      concentrations: ["Intelligent Systems", "Robotics", "Control Systems"],
+      progress: 0,
+      courses: [
+
+      ],
+      achievements: [
+
+      ],
+      activities: [
+
+      ],
+    },
+    {
+      id: "ucsd",
+      name: "University of California: San Diego",
+      shortName: "UC San Diego",
+      location: "La Jolla, CA",
       degree: "Bachelor of Science in Electrical Engineering",
       period: "2025 - 2027",
-      expectedGraduation: "December 2027",
+      expectedGraduation: "June 2027",
       gpa: "3.58",
       logoUrl: "./ucsd.png?height=120&width=120",
       status: "Current",
       description:
         "Pursuing a Bachelor's degree with a focus on machine learning and control. Participating in research projects and student organizations related to AI and robotics.",
-      concentrations: ["Machine Learning", "Intelligent Systems", "Robotics", "Control Systems"],
-      progress: 0,
+      concentrations: ["Machine Learning", "Control Systems"],
+      progress: 50,
       courses: [
         {
           code: "ECE 148",
@@ -72,6 +97,22 @@ export default function EducationPage() {
           grade: "A+",
           credits: 4,
           term: "Summer 2026"
+        },
+        {
+          code: "ECE 174",
+          name: "Introduction to Linear and Nonlinear Optimization with Applications",
+          description: "Intro to linear least squares problem, constrained and unconstrained quadratic optimization, and linear transformations.",
+          grade: "IP",
+          credits: 4,
+          term: "Fall 2026"
+        },
+        {
+          code: "ECE 100",
+          name: "Linear Electronic Systems",
+          description: "Linear active circuit and system design with frequency response, Laplace transforms, design and stability of filters.",
+          grade: "IP",
+          credits: 4,
+          term: "Fall 2026",
         },
         {
           code: "ECE 109",
